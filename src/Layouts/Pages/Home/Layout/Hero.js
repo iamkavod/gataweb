@@ -8,10 +8,10 @@ export default function Hero() {
       <section className="flex flex-col items-center justify-center px-2 pt-32 mx-auto max-w-screen-[1443px] lg:pt-44 md:px-0">
         <div className="flex flex-col items-center max-w-7xl md:px-8">
           <div className="mb-10 md:mx-auto sm:text-center max-w-7xl md:mb-12">
-            <h2 className="max-w-screen-[1443px] mb-6 font-sans text-xl lg:text-3xl text-center font-bold leading-none tracking-tight text-yellowShade  md:mx-auto uppercase font-bruno">
-              COMMUNITY OWNED DECENTRALIZED COMMERCE AND <br /> <span className='text-white'>LOGISTICS ECOSYSTEM</span>
+            <h2 className="max-w-[1443px] mb-6 text-[15px] lg:text-[35px] text-center font-bold leading-none tracking-tight text-yellowShade  md:mx-auto uppercase font-bruno">
+              Community Owned Decentralized E-Commerce and <br /> <span className='text-white'>LOGISTICS ECOSYSTEM</span>
             </h2>
-            <p className="text-base text-white md:text-lg text-center">
+            <p className="text-base text-white lg:text-[20px] text-[15px] text-center">
               An ecosystem of buyers, sellers and logistics partners in small, medium and large enterprises globally
             </p>
           </div>
@@ -48,7 +48,7 @@ export default function Hero() {
 
         <div className="flex flex-col items-center max-w-7xl md:px-8">
           <div className="mb-10 md:mx-auto sm:text-center max-w-7xl md:mb-12">
-            <h2 className="max-w-screen-[1443px] mb-6 font-sans text-xl text-center font-bold leading-none tracking-tight text-yellowShade lg:text-3xl md:mx-auto uppercase font-bruno">
+            <h2 className="max-w-screen-[1443px] mb-6 text-[16px] lg:text-[35px] text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
               Take control, <span className='text-white'>Join Our Community, connect, buy, sell</span>  and <span className='text-white'>ship products</span> with confidence in an ecosystem where doing commerce online pays!
             </h2>
           </div>
@@ -61,7 +61,7 @@ export default function Hero() {
         <div className='lg:mt-20 mt-10 rounded-lg spin-btn p-2 border border-blue-200'>
           <a
             href='/framwork'
-            className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none"
+            className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-[20px] text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none"
           >
             Our Framework
           </a>

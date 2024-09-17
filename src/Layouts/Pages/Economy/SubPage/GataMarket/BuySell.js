@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header } from '../../../../Components'
-import { DarkBG, GataMarketPC, WhiteBg } from '../../../../../Assets'
+import { DarkBG, GataMarketPC, GataMarketPhone, WhiteBg } from '../../../../../Assets'
 import { Countdown } from '../../../../Constants'
 
 export default function BuySell() {
@@ -13,12 +13,12 @@ export default function BuySell() {
           <div>
             <div className="flex flex-col items-center max-w-[1443px] md:px-8">
               <div className="max-w-[1443px] lg:mb-10 md:mx-auto sm:text-center">
-                <h2 className="max-w-[1443px] lg:mb-6 mb-3 font-sans text-xl font-bold leading-none tracking-tight text-yellowShade lg:text-4xl md:mx-auto text-center">
+                <h2 className="max-w-[1443px] lg:mb-6 mb-3 text-xl font-bold leading-none tracking-tight text-yellowShade lg:text-4xl md:mx-auto text-center">
                   Empower Your Business with GATAMARKET
                 </h2>
               </div>
 
-              <p className="max-w-[1443px] lg:mb-10 text-xs text-white sm:text-sm text-center">
+              <p className="max-w-[1443px] lg:mb-10 lg:text-[20px] text-[12px] text-darkShadeB text-center">
                 Join the decentralized marketplace where you control your transactions.
               </p>
               <div className='w-full flex justify-center'>
@@ -31,21 +31,26 @@ export default function BuySell() {
                   </a>
                 </div>
               </div>
-              <p className="max-w-[1443px] mb-10 mt-3 text-xs text-yellowShade sm:text-sm md:text-center">
+              <p className="max-w-[1443px] mb-10 mt-3 lg:text-[20px] text-[12px] text-yellowShade md:text-center">
                 Limited to the first 100 signups. Secure your spot now!
               </p>
             </div>
             <img
               src={GataMarketPC}
-              className="w-full max-w-screen-sm mx-auto rounded md:w-auto lg:max-w-screen-md"
+              className="lg:block hidden w-full max-w-screen-sm mx-auto rounded md:w-auto lg:max-w-screen-md"
+              alt=""
+            />
+            <img
+              src={GataMarketPhone}
+              className="lg:hidden block w-full max-w-screen-xs px-10 mx-auto rounded md:w-auto lg:max-w-screen-md"
               alt=""
             />
           </div>
         </section>
 
         <section>
-          <h1 className='text-yellowShade lg:text-3xl text-xl text-center pt-20 pb-5'>GATAMARKET Features</h1>
-          <div className="py-16 mx-auto max-w-[1443px] lg:py-20">
+          <h1 className='text-yellowShade lg:text-3xl text-xl text-center pt-20'>GATAMARKET Features</h1>
+          <div className="py-5 mx-auto max-w-[1443px] lg:py-20">
             <div className="grid gap-8 lg:grid-cols-2 sm:mx-auto max-w-[1443px] ">
               <div className="overflow-hidden transition-shadow duration-300 bg-darkShadeA rounded shadow-sm">
                 {/* <img
@@ -53,16 +58,16 @@ export default function BuySell() {
                   className="object-cover w-full h-64"
                   alt=""
                 /> */}
-                <div className='bg-white w-full h-[200px]'></div>
-                <div className="py-5">
+                <div className='bg-white w-full h-[200px] rounded-lg'></div>
+                <div className="py-2">
                   <a
                     href="/"
                     aria-label="Category"
-                    className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 text-yellowShade"
+                    className="inline-block mb-3 lg:text-2xl text-[18px] font-bold leading-5 transition-colors duration-200 text-yellowShade"
                   >
                     Product Listing
                   </a>
-                  <p className="mb-2 text-darkShadeB">
+                  <p className="mb-2 text-darkShadeB lg:text-[20px] text-[12px]">
                     Effortlessly list your products with all essential details in just a few clicks. Reach a global audience and start selling instantly in our decentralized marketplace.
                   </p>
                 </div>
@@ -78,11 +83,11 @@ export default function BuySell() {
                   <a
                     href="/"
                     aria-label="Category"
-                    className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 text-yellowShade"
+                    className="inline-block mb-3 lg:text-2xl text-[18px] font-bold leading-5 transition-colors duration-200 text-yellowShade"
                   >
                     Product Search & Filters
                   </a>
-                  <p className="mb-2 text-darkShadeB">
+                  <p className="mb-2 text-darkShadeB lg:text-[20px] text-[12px]">
                     Find exactly what you're looking for with powerful search and filtering options. Discover the best deals tailored to your needs.
                   </p>
                 </div>
@@ -93,7 +98,7 @@ export default function BuySell() {
               <div className='lg:mt-5 mt-3 rounded-lg spin-btn p-2 border'>
                 <a
                   href='/'
-                  className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
+                  className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
                 >
                   Join the Beta and Explore GATAMARKET!
                 </a>
@@ -106,8 +111,8 @@ export default function BuySell() {
           <div>
             <div className="flex flex-col items-center max-w-[1443px] md:px-8">
               <div className="max-w-[1443px] lg:mb-10 md:mx-auto sm:text-center">
-                <h2 className="max-w-[1443px] lg:mb-6 mb-3 font-sans text-xl font-bold leading-none tracking-tight text-yellowShade lg:text-4xl md:mx-auto text-center capitalize">
-                  benefits of using GATAMARKET
+                <h2 className="max-w-[1443px] lg:mb-6 mb-3 text-xl font-bold leading-2 tracking-tight text-yellowShade lg:text-4xl md:mx-auto text-center capitalize">
+                  benefits of using <br /> GATAMARKET
                 </h2>
               </div>
             </div>
@@ -119,8 +124,8 @@ export default function BuySell() {
           </div>
 
           <div className='flex flex-col gap-3 mt-3'>
-            <p className='text-darkShadeB lg:text-xl text-sm'>Highlights</p>
-            <ul className='list-disc ml-6'>
+            <p className='text-darkShadeB lg:text-xl'>Highlights</p>
+            <ul className='list-disc ml-6 flex flex-col gap-2'>
               <li className='text-darkShadeB'>Secure & Transparent Transactions</li>
               <li className='text-darkShadeB'>Global Marketplace Access</li>
               <li className='text-darkShadeB'>Reduced Fees & No Middlemen</li>
@@ -132,7 +137,7 @@ export default function BuySell() {
           <h1 className='text-white lg:text-2xl text-xl'>Testimonial</h1>
           <img
             src={DarkBG}
-            className="w-full max-w-[1443px] mx-auto rounded md:w-auto "
+            className="w-full max-w-[1443px] lg:h-auto h-[200px] mx-auto rounded md:w-auto "
             alt=""
           />
 
@@ -140,7 +145,7 @@ export default function BuySell() {
             <div className='lg:mt-5 mt-3 rounded-lg spin-btn p-2 border'>
               <a
                 href='/'
-                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-xs font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
+                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Experience These Benefits – Join the Beta Now!
               </a>
@@ -152,12 +157,12 @@ export default function BuySell() {
           <div>
             <div className="flex flex-col">
               <div className=" lg:mb-10">
-                <h2 className=" lg:mb-6 mb-3 font-sans text-xl font-bold leading-none tracking-tight text-yellowShade lg:text-4xl capitalize">
+                <h2 className=" lg:mb-6 mb-3 font-bold leading-none tracking-tight text-yellowShade capitalize">
                   Do You Qualify for the GATAMARKET Beta?
                 </h2>
                 <div className='flex flex-col gap-3 mt-3'>
-                  <p className='text-darkShadeB lg:text-xl text-sm'>To participate, you must:</p>
-                  <ul className='list-disc ml-6'>
+                  <p className='text-white lg:text-xl text-sm'>To participate, you must:</p>
+                  <ul className='list-disc ml-6 flex flex-col gap-3'>
                     <li className='text-darkShadeB'>Be one of the first 100 to sign up.</li>
                     <li className='text-darkShadeB'>Have completed the <span className='text-white'>“1billion2web3 Initiatives”</span> web3 onboardiing course and received your verifiable NFT certificate.</li>
                     <li className='text-darkShadeB'>Have at least <span className='text-white'>200,000 GATA Tokens</span> in your wallet.</li>
@@ -173,7 +178,7 @@ export default function BuySell() {
           <div>
             <div className="flex flex-col items-center ">
               <div className=" lg:mb-10 md:mx-auto sm:text-center">
-                <h2 className=" lg:mb-6 mb-3 font-sans text-sm font-bold leading-none tracking-tight text-yellowShade lg:text-4xl md:mx-auto text-center">
+                <h2 className=" lg:mb-6 mb-3 text-xl font-bold leading-none tracking-tight text-yellowShade lg:text-4xl md:mx-auto text-center">
                   Live countdown to the official launch.
                 </h2>
               </div>
@@ -191,13 +196,13 @@ export default function BuySell() {
             <div className='lg:mt-0 mt-3 rounded-lg spin-btn p-2 border'>
               <a
                 href='/'
-                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-xs font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
+                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Secure your spot in the GATAMARKET Beta
               </a>
             </div>
           </div>
-          <p className="max-w-[1443px] mb-10 mt-3 text-xs text-yellowShade sm:text-sm text-center">
+          <p className="max-w-[1443px] mb-10 mt-3 lg:text-[20px] text-[15px] text-yellowShade text-center">
             Only 100 spots available for qualified participants!
           </p>
         </div>
@@ -206,7 +211,7 @@ export default function BuySell() {
           <div>
             <div className="flex flex-col max-w-[1443px]">
               <div className="max-w-[1443px] lg:mb-5">
-                <h2 className="max-w-[1443px] lg:mb-6 mb-3 font-sans text-sm font-bold leading-none tracking-tight text-white lg:text-xl text-start capitalize">
+                <h2 className="max-w-[1443px] lg:mb-6 mb-3 text-sm font-bold leading-none tracking-tight text-white lg:text-xl text-start capitalize">
                   How It Works Section:
                 </h2>
               </div>
@@ -218,17 +223,11 @@ export default function BuySell() {
             />
           </div>
 
-          <div className='flex flex-col gap-3 mt-3'>
-            <ul className='list-disc ml-6'>
-              <li className='text-darkShadeB lg:text-xl text-xs'>All transactions on GATAMARKET are conducted using GATA Tokens. Make sure you have the required balance and certificate to qualify for the beta!</li>
-            </ul>
-          </div>
-
-          <div className='w-full flex justify-center pb-10'>
+          <div className='w-full flex justify-center pt-3'>
             <div className='lg:mt-10 mt-3 rounded-lg spin-btn p-2 border'>
               <a
                 href='/'
-                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-xs font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
+                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Join the Beta and Get Started with GATAMARKET!
               </a>

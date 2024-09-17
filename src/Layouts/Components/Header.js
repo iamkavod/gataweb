@@ -101,7 +101,7 @@ export default function Example() {
             aria-label="GataProtocol"
             class="inline-flex items-center"
           >
-            <img src={GataLogo} alt="Logo" className="lg:w-40 lg:h-auto w-20" />
+            <img src={GataLogo} alt="Logo" className="lg:w-40 lg:h-auto w-[100px]" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -335,7 +335,7 @@ export default function Example() {
               title="Yiieldy"
               class="inline-flex items-center"
             >
-              <img src={GataLogo} alt="Logo" className="w-[75px]" />
+              <img src={GataLogo} alt="Logo" className="w-[100px]" />
             </a>
             <button
               type="button"

@@ -7,16 +7,16 @@ export default function Footer() {
   return (
     <main>
       <div className="px-4 pt-16 mx-auto max-w-[1443px] md:px-24 lg:px-0">
-        <div className="flex lg:flex-row justify-between flex-col">
+        <div className="flex lg:flex-row justify-between flex-col gap-4">
           <div>
-            <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-xl">
+            <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Products
             </p>
-            <ul className="mt-2 space-y-2">
+            <ul className="space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Home
                 </a>
@@ -24,7 +24,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   How it works
                 </a>
@@ -32,14 +32,14 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-xl">
+            <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Company
             </p>
-            <ul className="mt-2 space-y-2">
+            <ul className="space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   About
                 </a>
@@ -47,7 +47,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Terms of service
                 </a>
@@ -55,14 +55,14 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-xl">
+            <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Legal
             </p>
-            <ul className="mt-2 space-y-2">
+            <ul className="space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Privacy Policy
                 </a>
@@ -70,7 +70,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Copyright Information
                 </a>
@@ -78,14 +78,14 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-xl">
+            <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Contact Us
             </p>
-            <ul className="mt-2 space-y-2">
+            <ul className="space-y-2">
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   FAQs
                 </a>
@@ -93,7 +93,7 @@ export default function Footer() {
               <li>
                 <a
                   href="/"
-                  className="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
+                  className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   hello@gataprotocol.org
                 </a>

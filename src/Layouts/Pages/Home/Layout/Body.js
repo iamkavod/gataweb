@@ -16,10 +16,10 @@ export default function Body() {
         <button
           type="button"
           aria-label="Open item"
-          className="flex items-center justify-between w-full p-4 focus:outline-none text-white"
+          className="flex items-center justify-between w-full lg:px-4 px-2 py-1 px-4 focus:outline-none text-white"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <p className="lg:text-xl text-sm text-start font-bold capitalize">{title}</p>
+          <p className="lg:text-[20px] text-[12px] text-start font-bold capitalize">{title}</p>
           <div className="flex items-center justify-center w-8 h-8">
             <img src={Dropdown} alt='Dropdown' className={`w-3 text-gray-600 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''
               }`} />
@@ -27,7 +27,7 @@ export default function Body() {
         </button>
         {isOpen && (
           <div className="p-4 pt-0">
-            <p className="text-white lg:text-xl text-sm text-start">{children}</p>
+            <p className="text-white lg:text-[15px] text-[8px] text-start">{children}</p>
           </div>
         )}
       </div>
@@ -63,45 +63,45 @@ export default function Body() {
         <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
 
           {/* Ease To Use */}
-          <div className="p-px overflow-hidden transition duration-300 transform rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl h-[350px] bg-white">
+          <div className="p-px overflow-hidden transition duration-300 transform rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl h-[300px] bg-white">
             <div className="relative p-5 bg-white rounded-sm flex flex-col justify-center items-center">
-              <div className="flex justify-center flex-col items-center lg:flex-row border-2 border-yellowShade rounded-full w-24 h-24 mb-5">
-                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-darkShadeA p-4 lg:mb-0">
-                  <img src={Ease} alt='ease' className='spin' />
+              <div className="flex justify-center flex-col items-center lg:flex-row border-2 border-yellowShade rounded-full w-[60px] h-[60px] mb-5">
+                <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-darkShadeA p-3 lg:mb-0">
+                  <img src={Ease} alt='ease' className='spin lg:w-[60px] w-[35px]' />
                 </div>
               </div>
-              <h6 className="font-semibold leading-5 text-center mb-5">EASE OF USE</h6>
-              <p className="mb-2 text-lg text-darkShadeA text-center">
+              <h6 className="font-bold leading-5 text-center mb-5 lg:text-[20px] text-[15px] uppercase">ease of use</h6>
+              <p className="mb-2 lg:text-[20px] text-[15px] text-darkShadeA text-center">
                 Our platform streamlines the sales and logistics process, eliminating the need for middlemen and reducing transaction costs.
               </p>
             </div>
           </div>
 
           {/* Community */}
-          <div className="overflow-hidden transition duration-300 transform rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl h-[350px] bg-white">
+          <div className="overflow-hidden transition duration-300 transform rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl h-[300px] bg-white">
             <div className="relative p-5 bg-white rounded-sm flex flex-col justify-center items-center">
-              <div className="flex justify-center flex-col items-center lg:flex-row border-2 border-yellowShade rounded-full w-24 h-24 mb-5">
-                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-darkShadeA p-4 lg:mb-0">
-                  <img src={Community} alt='ease' className='spin' />
+              <div className="flex justify-center flex-col items-center lg:flex-row border-2 border-yellowShade rounded-full w-[60px] h-[60px] mb-5">
+                <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-darkShadeA p-3 lg:mb-0">
+                  <img src={Community} alt='ease' className='spin lg:w-[60px] w-[35px]' />
                 </div>
               </div>
-              <h6 className="font-semibold leading-5 text-center mb-5">Community led growth</h6>
-              <p className="mb-2 text-lg text-darkShadeA text-center">
+              <h6 className="font-bold leading-5 text-center mb-5 uppercase">Community led growth</h6>
+              <p className="mb-2 lg:text-[20px] text-[15px] text-darkShadeA text-center">
                 Connect with potential buyers and sellers from around the world, expanding your reach and opening up new opportunities for growth.
               </p>
             </div>
           </div>
 
           {/* Secure */}
-          <div className="overflow-hidden transition duration-300 transform rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl h-[350px] bg-white">
+          <div className="overflow-hidden transition duration-300 transform rounded-lg shadow-sm hover:scale-105 group hover:shadow-xl h-[300px] bg-white">
             <div className="relative p-5 bg-white rounded-sm flex flex-col justify-center items-center">
-              <div className="flex justify-center flex-col items-center lg:flex-row border-2 border-yellowShade rounded-full w-24 h-24 mb-5">
-                <div className="flex items-center justify-center w-20 h-20 rounded-full bg-darkShadeA p-4 lg:mb-0">
-                  <img src={Secure} alt='ease' className='spin' />
+              <div className="flex justify-center flex-col items-center lg:flex-row border-2 border-yellowShade rounded-full w-[60px] h-[60px] mb-5">
+                <div className="flex items-center justify-center w-[50px] h-[50px] rounded-full bg-darkShadeA p-3 lg:mb-0">
+                  <img src={Secure} alt='ease' className='spin lg:w-[60px] w-[35px]' />
                 </div>
               </div>
-              <h6 className="font-semibold leading-5 text-center mb-5">secure payment</h6>
-              <p className="mb-2 text-lg text-darkShadeA text-center">
+              <h6 className="font-bold leading-5 text-center mb-5 uppercase">secure payment</h6>
+              <p className="mb-2 lg:text-[20px] text-[15px] text-darkShadeA text-center">
                 Conduct transactions with confidence, knowing that your payments are secure and transparent.
               </p>
             </div>
@@ -118,18 +118,18 @@ export default function Body() {
             alt=""
           />
           <div className="relative bg-darkShadeA bg-opacity-30">
-            <div className="px-4 py-16 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20">
-              <h6 className="font-bold leading-5 text-yellowShade text-xl lg:text-3xl uppercase font-bruno text-center mb-20 mt-20">The Protocol</h6>
+            <div className="px-4 py-5 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20">
+              <h6 className="font-bold leading-5 text-yellowShade text-[16px] lg:text-[25px] uppercase font-bruno text-center mb-20 mt-20">The Protocol</h6>
               <div className="flex lg:flex-col flex-col-reverse items-center justify-between xl:flex-row">
                 <div
                   ref={textRef}
                   className={`w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
                     }`}
                 >
-                  <h2 className="max-w-lg mb-6 font-sans lg:text-3xl text-xl lg:text-start text-center font-bold tracking-tight text-yellowShade sm:text-4xl sm:leading-none uppercase">
+                  <h2 className="max-w-lg mb-6 lg:text-[30px] text-[20px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:text-4xl sm:leading-none uppercase">
                     GATA Network
                   </h2>
-                  <p className="max-w-xl mb-4 text-base text-white md:text-lg lg:text-xl text-sm lg:text-start text-center">
+                  <p className="max-w-xl mb-4 text-base text-white lg:text-[22px] text-[14px] lg:text-start text-center">
                     Join our exclusive, members-only community where together we drive the dCommerce ecosystem forward by collaborating, networking, and governing the ecosystem as like-minded users.
                   </p>
                   <div className='w-full flex lg:justify-start justify-center'>
@@ -168,10 +168,10 @@ export default function Body() {
                   className={`w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
                     }`}
                 >
-                  <h2 className="max-w-lg mb-6 font-sans lg:text-3xl text-xl lg:text-start text-center font-bold tracking-tight text-yellowShade sm:text-4xl sm:leading-none uppercase">
+                  <h2 className="max-w-lg mb-6 lg:text-[30px] text-[20px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none uppercase">
                     GATA Market
                   </h2>
-                  <p className="max-w-xl mb-4 text-base text-black md:text-lg lg:text-xl text-sm lg:text-start text-center">
+                  <p className="max-w-xl mb-4 text-base text-black lg:text-[22px] text-[14px] lg:text-start text-center">
                     Join our exclusive, members-only community where together we drive the dCommerce ecosystem forward by collaborating, networking, and governing the ecosystem as like-minded users.
                   </p>
                   <div className='w-full flex lg:justify-start justify-center'>
@@ -215,10 +215,10 @@ export default function Body() {
                   className={`w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
                     }`}
                 >
-                  <h2 className="max-w-lg mb-6 font-sans lg:text-3xl text-xl lg:text-start text-center font-bold tracking-tight text-yellowShade sm:text-4xl sm:leading-none uppercase">
+                  <h2 className="max-w-lg mb-6 lg:text-[30px] text-[20px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none uppercase">
                     GATA Now
                   </h2>
-                  <p className="max-w-xl mb-4 text-base text-white md:text-lg lg:text-xl text-sm lg:text-start text-center">
+                  <p className="max-w-xl mb-4 text-base text-white lg:text-[22px] text-[14px] lg:text-start text-center">
                     Join our exclusive, members-only community where together we drive the dCommerce ecosystem forward by collaborating, networking, and governing the ecosystem as like-minded users.
                   </p>
                   <div className='w-full flex lg:justify-start justify-center'>
@@ -257,10 +257,10 @@ export default function Body() {
                   className={`w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
                     }`}
                 >
-                  <h2 className="max-w-lg mb-6 font-sans lg:text-3xl text-xl lg:text-start text-center font-bold tracking-tight text-yellowShade sm:text-4xl sm:leading-none uppercase">
+                  <h2 className="max-w-lg mb-6 lg:text-[30px] text-[20px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none uppercase">
                     GATA Tokenomics
                   </h2>
-                  <p className="max-w-xl mb-4 text-base text-black md:text-lg lg:text-xl text-sm lg:text-start text-center">
+                  <p className="max-w-xl mb-4 text-base text-black lg:text-[22px] text-[14px] lg:text-start text-center">
                     Join our exclusive, members-only community where together we drive the dCommerce ecosystem forward by collaborating, networking, and governing the ecosystem as like-minded users.
                   </p>
                   <div className='w-full flex lg:justify-start justify-center'>
@@ -293,7 +293,7 @@ export default function Body() {
         <div class="sm:mx-auto max-w-[1443px]">
           <div class="flex flex-col mb-16 sm:text-center">
             <div class="max-w-[1443px] md:mx-auto sm:text-center">
-              <h2 class="max-w-[1443px] mb-6 font-sans lg:text-xl text-sm lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
+              <h2 class="max-w-[1443px] mb-2 lg:text-[35px] text-[20px] lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
                 why join THE gata protocol?
               </h2>
             </div>
@@ -327,6 +327,7 @@ export default function Body() {
       {/* Get In Touch */}
       <section>
         <div className="relative">
+          <h1 className='text-darkShadeB text-center font-bold py-2 lg:text-[20px] text-[15px]'>Get in touch <span className='text-white'>with us</span></h1>
           <div className="relative bg-darkShadeA bg-opacity-30 max-w-[1443px] flex justify-center items-center w-full mx-auto">
             <div className='flex justify-center'>
               <img
@@ -336,29 +337,29 @@ export default function Body() {
               />
             </div>
             <form className='w-full z-50 lg:px-0 px-4 lg:pt-10 pb-10 pt-0 lg:pb-32'>
-              <div className="flex flex-col gap-10 w-full">
-                <div className='flex gap-10'>
+              <div className="flex flex-col lg:gap-10 gap-2 w-full">
+                <div className='flex lg:flex-row flex-col lg:gap-10 gap-2'>
                   <input
                     placeholder="Enter your name"
                     required=""
                     type="text"
-                    className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-darkShadeC rounded-lg shadow-sm appearance-none md:mr-2 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline text-white input placeholder:lg:text-xl placeholder:text-xs"
+                    className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-darkShadeC rounded-lg shadow-sm appearance-none md:mr-2 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline text-white input placeholder:lg:text-xl placeholder:text-[10px]"
                   />
                   <input
                     placeholder="Enter your email address"
                     required=""
                     type="text"
-                    className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-darkShadeC rounded-lg shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline text-white input placeholder:lg:text-xl placeholder:text-xs"
+                    className="flex-grow w-full h-12 px-4 mb-3 transition duration-200 bg-darkShadeC rounded-lg shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline text-white input placeholder:lg:text-xl placeholder:text-[10px]"
                   />
                 </div>
-                <textarea  className='flex-grow w-full h-40 p-4 mb-3 transition duration-200 bg-darkShadeC rounded-lg shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline text-white input placeholder:lg:text-xl placeholder:text-xs' placeholder='Type your message here..'></textarea>
+                <textarea className='flex-grow w-full h-40 p-4 mb-3 transition duration-200 bg-darkShadeC rounded-lg shadow-sm appearance-none md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline text-white input placeholder:lg:text-xl placeholder:text-[10px]' placeholder='Type your message here..'></textarea>
               </div>
-              <div className="flex items-center mt-4">
+              <div className="flex items-center mt-4 px-16">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center h-12 px-6 w-full font-bold tracking-wide text-black transition duration-200 rounded shadow-md bg-yellowShade focus:shadow-outline focus:outline-none"
+                  className="inline-flex items-center justify-center h-12 px-6 w-full font-bold tracking-wide text-black transition duration-200 rounded shadow-md bg-yellowShade focus:shadow-outline focus:outline-none lg:text-[16px] text-[10px]"
                 >
-                  Subscribe
+                  Submit
                 </button>
               </div>
             </form>

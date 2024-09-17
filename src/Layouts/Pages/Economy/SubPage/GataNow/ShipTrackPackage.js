@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header } from '../../../../Components'
-import { DarkBG, GataMarketPC, GataNowPC, WhiteBg } from '../../../../../Assets'
+import { DarkBG, GataMarketPC, GataNowPC, GataNowPhone, WhiteBg } from '../../../../../Assets'
 import { Countdown } from '../../../../Constants'
 
 export default function ShipTrackPackage() {
@@ -13,7 +13,7 @@ export default function ShipTrackPackage() {
           <div>
             <div className="flex flex-col items-center max-w-[1443px] md:px-8">
               <div className="max-w-[1443px] lg:mb-10 md:mx-auto sm:text-center">
-                <h2 className="max-w-[1443px] lg:mb-6 mb-3 font-sans text-xl font-bold leading-none tracking-tight text-yellowShade lg:text-4xl md:mx-auto text-center">
+                <h2 className="max-w-[1443px] lg:mb-6 mb-3 font-sans text-xl font-bold leading-none tracking-tight text-yellowShade lg:text-4xl md:mx-auto text-center leading-2">
                   Simplify Your Shipping with GATANOW
                 </h2>
               </div>
@@ -25,19 +25,24 @@ export default function ShipTrackPackage() {
                 <div className='lg:mt-0 mt-3 rounded-lg spin-btn p-2 border'>
                   <a
                     href='/'
-                    className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
+                    className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
                   >
                     Join the Beta
                   </a>
                 </div>
               </div>
-              <p className="max-w-[1443px] mb-10 mt-3 text-xs text-yellowShade sm:text-sm md:text-center">
+              <p className="max-w-[1443px] mb-10 mt-3 lg:text-[20px] text-[12px] text-yellowShade text-sm text-center">
                 Limited to the first 100 qualified participants. Do you meet the requirements?
               </p>
             </div>
             <img
               src={GataNowPC}
-              className="w-full max-w-screen-sm mx-auto rounded md:w-auto lg:max-w-screen-md"
+              className="lg:block hidden w-full max-w-screen-sm mx-auto rounded md:w-auto lg:max-w-screen-md"
+              alt=""
+            />
+            <img
+              src={GataNowPhone}
+              className="lg:hidden block w-full max-w-screen-xs px-10 mx-auto rounded md:w-auto lg:max-w-screen-md"
               alt=""
             />
           </div>
@@ -45,7 +50,7 @@ export default function ShipTrackPackage() {
 
         <section>
           <h1 className='text-yellowShade lg:text-3xl text-xl text-center pt-20 pb-5'>GATANow features</h1>
-          <div className="py-16 mx-auto max-w-[1443px] lg:py-20">
+          <div className="mx-auto max-w-[1443px]">
             <div className="grid gap-8 lg:grid-cols-2 sm:mx-auto max-w-[1443px] ">
               <div className="overflow-hidden transition-shadow duration-300 bg-darkShadeA rounded shadow-sm">
                 {/* <img
@@ -58,11 +63,11 @@ export default function ShipTrackPackage() {
                   <a
                     href="/"
                     aria-label="Category"
-                    className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 text-yellowShade"
+                    className="inline-block mb-3 lg:text-2xl text-[18px] font-bold leading-5 transition-colors duration-200 text-yellowShade"
                   >
                     Book a Delivery
                   </a>
-                  <p className="mb-2 text-darkShadeB">
+                  <p className="mb-2 text-darkShadeB lg:text-[20px] text-[12px]">
                     Easily book your delivery by inputting package details, selecting delivery speed, and receiving instant cost estimates. Get your shipments moving with just a few clicks.
                   </p>
                 </div>
@@ -78,11 +83,11 @@ export default function ShipTrackPackage() {
                   <a
                     href="/"
                     aria-label="Category"
-                    className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 text-yellowShade"
+                    className="inline-block mb-3 lg:text-2xl text-[18px] font-bold leading-5 transition-colors duration-200 text-yellowShade"
                   >
                     Track Shipment
                   </a>
-                  <p className="mb-2 text-darkShadeB">
+                  <p className="mb-2 text-darkShadeB lg:text-[20px] text-[12px]">
                     Stay updated with real-time tracking. Monitor your shipment’s journey from dispatch to delivery with live status updates.
                   </p>
                 </div>
@@ -93,7 +98,7 @@ export default function ShipTrackPackage() {
               <div className='lg:mt-5 mt-3 rounded-lg spin-btn p-2 border'>
                 <a
                   href='/'
-                  className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
+                  className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
                 >
                   Join the Beta and Experience Seamless Shipping!
                 </a>
@@ -119,8 +124,8 @@ export default function ShipTrackPackage() {
           </div>
 
           <div className='flex flex-col gap-3 mt-3'>
-            <p className='text-darkShadeB lg:text-xl text-sm'>Highlights</p>
-            <ul className='list-disc ml-6'>
+            <p className='text-darkShadeB lg:text-xl'>Highlights</p>
+            <ul className='list-disc ml-6 flex flex-col gap-2'>
               <li className='text-darkShadeB'>Real-Time Shipment Tracking</li>
               <li className='text-darkShadeB'>Cost-Effective Delivery Solutions</li>
               <li className='text-darkShadeB'>Seamless Integration with GATAMARKET</li>
@@ -129,10 +134,10 @@ export default function ShipTrackPackage() {
         </section>
 
         <div className='mt-10 flex flex-col gap-4'>
-          <h1 className='text-white lg:text-2xl text-xl'>Testimonial</h1>
+          <h1 className='text-white lg:lg:text-2xl text-[18px] text-xl'>Testimonial</h1>
           <img
             src={DarkBG}
-            className="w-full max-w-[1443px] mx-auto rounded md:w-auto "
+            className="w-full max-w-[1443px] lg:h-auto h-[200px] mx-auto rounded md:w-auto "
             alt=""
           />
 
@@ -140,7 +145,7 @@ export default function ShipTrackPackage() {
             <div className='lg:mt-5 mt-3 rounded-lg spin-btn p-2 border'>
               <a
                 href='/'
-                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-xs font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
+                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Unlock These Benefits – Join the Beta Now!
               </a>
@@ -157,12 +162,12 @@ export default function ShipTrackPackage() {
                 </h2>
                 <div className='flex flex-col gap-3 mt-3'>
                   <p className='text-darkShadeB lg:text-xl text-sm'>To participate, you must:</p>
-                  <ul className='list-disc ml-6'>
+                  <ul className='list-disc ml-6 flex flex-col gap-3'>
                     <li className='text-darkShadeB'>Be one of the first 100 to sign up.</li>
                     <li className='text-darkShadeB'>Have completed the <span className='text-white'>“1billion2web3 Initiatives”</span> web3 onboardiing course and received your verifiable NFT certificate.</li>
                     <li className='text-darkShadeB'>Have at least <span className='text-white'>200,000 GATA Tokens</span> in your wallet.</li>
                   </ul>
-                  <p className='text-yellowShade lg:text-xl text-sm'>Only those who meet all the prerequisites will receive a one-year free membership GATA Pass NFT.</p>
+                  <p className='text-yellowShade lg:text-[20px] text-[12px]'>Only those who meet all the prerequisites will receive a one-year free membership GATA Pass NFT.</p>
                 </div>
               </div>
             </div>
@@ -191,7 +196,7 @@ export default function ShipTrackPackage() {
             <div className='lg:mt-0 mt-3 rounded-lg spin-btn p-2 border'>
               <a
                 href='/'
-                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-xs font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
+                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Secure your spot in the GATANOW Beta
               </a>
@@ -202,7 +207,7 @@ export default function ShipTrackPackage() {
           </p>
         </div>
 
-        <section className='lg:pt-20 pt-10'>
+        <section className='lg:pt-20 pt-5'>
           <div>
             <div className="flex flex-col max-w-[1443px]">
               <div className="max-w-[1443px] lg:mb-5">
@@ -218,17 +223,11 @@ export default function ShipTrackPackage() {
             />
           </div>
 
-          <div className='flex flex-col gap-3 mt-3'>
-            <ul className='list-disc ml-6'>
-              <li className='text-darkShadeB lg:text-xl text-xs'>Ensure your account is linked with GATAMARKET for a seamless experience. Start shipping with confidence using GATANOW!</li>
-            </ul>
-          </div>
-
           <div className='w-full flex justify-center pb-10'>
             <div className='lg:mt-10 mt-3 rounded-lg spin-btn p-2 border'>
               <a
                 href='/'
-                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-xs font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
+                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Join the Beta and Start Shipping with GATANOW!
               </a>
