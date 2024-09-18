@@ -25,34 +25,29 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import { GataLogo } from '../../Assets'
-import { RiTeamFill } from "react-icons/ri";
-import { LiaTeamspeak } from "react-icons/lia";
+import { RiTeamFill, RiCommunityFill } from "react-icons/ri";
+import { LiaTeamspeak, LiaLandmarkSolid } from "react-icons/lia";
 import { FcAbout, FcCollaboration } from "react-icons/fc";
 import { GoProjectRoadmap } from "react-icons/go";
 import { IoMdDocument } from "react-icons/io";
 import { IoNewspaperSharp } from "react-icons/io5";
 import { GrBlog } from "react-icons/gr";
+import { FaShip } from "react-icons/fa";
+import { MdRememberMe } from "react-icons/md";
+import { FaCoins } from "react-icons/fa6";
 
+// MENU
 // Economy Menu
-const GATACommunity = [
-  { name: 'Join The Community', href: '/jointhecommunity' },
-]
-
-const GATAMarket = [
-  { name: 'Sell/Buy products', href: '/buyandsellproducts' },
-]
-
-const GATANow = [
-  { name: 'Ship/Track package', href: '/shipandtrack' },
+const economy = [
+  { name: 'GATA Community', href: '/jointhecommunity', icon: RiCommunityFill },
+  { name: 'GATA Market', href: '/buyandsellproducts', icon: LiaLandmarkSolid },
+  { name: 'GATA Now', href: '/shipandtrack', icon: FaShip },
 ]
 
 // Token Menu
-const GATAMembershipNFTs = [
-  { name: 'Get', href: '/get' },
-]
-
-const GATAToken = [
-  { name: 'Buy/Sell', href: '/buyandsell' },
+const token = [
+  { name: 'GATA Membership NFTs', href: '/get', icon: MdRememberMe },
+  { name: 'GATA Token', href: '/buyandsell', icon: FaCoins },
 ]
 
 // Resources Menu
@@ -93,7 +88,7 @@ export default function Example() {
 
   return (
     <header className={`bg-${hasScrolled ? "darkShadeA" : "darkShadeA"
-      } fixed top-0 w-full z-50`}>
+      } fixed top-0 w-full z-[100]`}>
       <nav aria-label="Global" className="mx-auto flex max-w-[1443px] items-center justify-between py-6 px-2 md:px-5 lg:px-8">
         <div className="flex">
           <a
@@ -116,138 +111,72 @@ export default function Example() {
         </div>
         <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
           {/* Economy */}
-          <Popover className="relative">
-            <PopoverButton
-              onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center gap-x-1 text-lg font-bold leading-6 text-white focus:outline-none"
-            >
-              Economy
-              <ChevronDownIcon
-                aria-hidden="true"
-                className={`h-5 w-5 flex-none ${isOpen ? '' : ''}`}
-              />
-            </PopoverButton>
+          <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
+            <Popover className="relative">
+              <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-white focus:outline-none">
+                Economy
+                <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-white" />
+              </PopoverButton>
 
-            <PopoverPanel
-              transition
-              className="absolute -left-20 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-darkShadeA shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-            >
-              <div className="p-4 grid grid-cols-2 gap-10">
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center gap-4 rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                    GATA Community
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...GATACommunity].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 px-4 pr-3 text-sm font-bold leading-7 text-white hover:bg-darkShadeC"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center gap-4 rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                    GATA Market
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...GATAMarket].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 px-4 pr-3 text-sm font-bold leading-7 text-white hover:bg-darkShadeC"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center gap-4 rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                    GATA Now
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...GATANow].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 px-4 pr-3 text-sm font-bold leading-7 text-white hover:bg-darkShadeC"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
-              </div>
-            </PopoverPanel>
-          </Popover>
+              <PopoverPanel
+                transition
+                className="absolute -left-28 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-darkShadeA shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+              >
+                <div className="p-4">
+                  {economy.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-darkShadeC"
+                    >
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-white">
+                        <item.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-primaryColor" />
+                      </div>
+                      <div className="flex-auto">
+                        <a href={item.href} className="block font-bold text-white">
+                          {item.name}
+                          <span className="absolute inset-0" />
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </PopoverPanel>
+            </Popover>
+          </PopoverGroup>
 
           {/* Tokens */}
-          <Popover className="relative">
-            <PopoverButton
-              onClick={() => setIsOpen(!isOpen)}
-              className="flex items-center gap-x-1 text-lg font-bold leading-6 text-white focus:outline-none"
-            >
-              Token
-              <ChevronDownIcon
-                aria-hidden="true"
-                className={`h-5 w-5 flex-none ${isOpen ? '' : ''}`}
-              />
-            </PopoverButton>
+          <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
+            <Popover className="relative">
+              <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-white focus:outline-none">
+                Token
+                <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none text-white" />
+              </PopoverButton>
 
-            <PopoverPanel
-              transition
-              className="absolute -left-20 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-darkShadeA shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-            >
-              <div className="p-4 grid grid-cols-1 gap-10">
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center gap-4 rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                    GATA Membership NFTs
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...GATAMembershipNFTs].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 px-4 pr-3 text-sm font-bold leading-7 text-white hover:bg-darkShadeC"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center gap-4 rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                    GATA Token
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...GATAToken].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 px-4 pr-3 text-sm font-bold leading-7 text-white hover:bg-darkShadeC"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
-              </div>
-            </PopoverPanel>
-          </Popover>
+              <PopoverPanel
+                transition
+                className="absolute -left-28 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-darkShadeA shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
+              >
+                <div className="p-4">
+                  {token.map((item) => (
+                    <div
+                      key={item.name}
+                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-darkShadeC"
+                    >
+                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-white">
+                        <item.icon aria-hidden="true" className="h-6 w-6 text-gray-600 group-hover:text-primaryColor" />
+                      </div>
+                      <div className="flex-auto">
+                        <a href={item.href} className="block font-bold text-white">
+                          {item.name}
+                          <span className="absolute inset-0" />
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </PopoverPanel>
+            </Popover>
+          </PopoverGroup>
 
           {/* Resources */}
           <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
@@ -351,122 +280,47 @@ export default function Example() {
               <div className="space-y-2 py-6">
                 {/* Economy */}
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white underline">
                     Economy
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    <Disclosure as="div" className="ml-1">
-                      <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                        GATA Community
-                        <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
+                    {[...economy].map((item) => (
+                      <DisclosureButton
+                        key={item.name}
+                        as="a"
+                        href={item.href}
+                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
+                      >
+                        {item.name}
                       </DisclosureButton>
-                      <DisclosurePanel className="mt-2 space-y-2">
-                        {[...GATACommunity].map((item) => (
-                          <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                          >
-                            {/* <Link
-                          href={item.href}
-                          className="block w-full h-full"
-                        >
-                          {item.name}
-                        </Link> */}
-                            {item.name}
-                          </DisclosureButton>
-                        ))}
-                      </DisclosurePanel>
-                    </Disclosure>
-                    <Disclosure as="div" className="ml-1">
-                      <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                        GATA Market
-                        <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                      </DisclosureButton>
-                      <DisclosurePanel className="mt-2 space-y-2">
-                        {[...GATAMarket].map((item) => (
-                          <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                          >
-                            {item.name}
-                          </DisclosureButton>
-                        ))}
-                      </DisclosurePanel>
-                    </Disclosure>
-                    <Disclosure as="div" className="ml-1">
-                      <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                        GATA Now
-                        <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                      </DisclosureButton>
-                      <DisclosurePanel className="mt-2 space-y-2">
-                        {[...GATANow].map((item) => (
-                          <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                          >
-                            {item.name}
-                          </DisclosureButton>
-                        ))}
-                      </DisclosurePanel>
-                    </Disclosure>
+                    ))}
                   </DisclosurePanel>
                 </Disclosure>
+
                 {/* Token */}
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white underline">
                     Token
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
                   <DisclosurePanel className="mt-2 space-y-2">
-                    <Disclosure as="div" className="ml-1">
-                      <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                        GATA Membership NFTs
-                        <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
+                    {[...token].map((item) => (
+                      <DisclosureButton
+                        key={item.name}
+                        as="a"
+                        href={item.href}
+                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
+                      >
+                        {item.name}
                       </DisclosureButton>
-                      <DisclosurePanel className="mt-2 space-y-2">
-                        {[...GATAMembershipNFTs].map((item) => (
-                          <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                          >
-                            {item.name}
-                          </DisclosureButton>
-                        ))}
-                      </DisclosurePanel>
-                    </Disclosure>
-                    <Disclosure as="div" className="ml-1">
-                      <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
-                        GATA Token
-                        <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                      </DisclosureButton>
-                      <DisclosurePanel className="mt-2 space-y-2">
-                        {[...GATAToken].map((item) => (
-                          <DisclosureButton
-                            key={item.name}
-                            as="a"
-                            href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                          >
-                            {item.name}
-                          </DisclosureButton>
-                        ))}
-                      </DisclosurePanel>
-                    </Disclosure>
+                    ))}
                   </DisclosurePanel>
                 </Disclosure>
 
                 {/* Resources */}
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white underline">
                     Resources
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
@@ -486,7 +340,7 @@ export default function Example() {
 
                 {/* More */}
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white underline">
                     More
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
@@ -505,7 +359,7 @@ export default function Example() {
                 </Disclosure>
                 <a
                   href={'/contact'}
-                  class="flex lg:hidden items-center justify-center h-12 px-8 font-bold text-lg tracking-wide text-whiteShade transition duration-200 shadow-md bg-yellowShade hover:opacity-[.9] focus:shadow-outline focus:outline-none rounded-lg"
+                  class="hidden items-center justify-center h-12 px-8 font-bold text-lg tracking-wide text-whiteShade transition duration-200 shadow-md bg-yellowShade hover:opacity-[.9] focus:shadow-outline focus:outline-none rounded-lg"
                   aria-label="Contact Us"
                 >
                   Lunch

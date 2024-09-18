@@ -14,7 +14,7 @@ export default function Contact() {
             <div>
               <ul className='list-disc pl-6 py-2 flex flex-col gap-2'>
                 <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Email: <a href='mailto:hello@gataprotocol.org' className='text-white font-bold'>hello@gataprotocol.org</a></li>
-                <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Discord: <a href='https://discord.com/invite/nHZTQNbEdk' className='text-white font-bold'>https://discord.com/invite/nHZTQNbEdk</a></li>
+                <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Discord: <a href='https://discord.gg/hMsGUhuGRs' className='text-white font-bold'>https://discord.gg/hMsGUhuGRs</a></li>
                 <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Web Address: <a href='https://gataprotocol.org/' className='text-white font-bold'>https://gataprotocol.org/</a></li>
               </ul>
             </div>

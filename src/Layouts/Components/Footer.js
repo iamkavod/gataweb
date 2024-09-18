@@ -6,9 +6,9 @@ import { BsDiscord } from "react-icons/bs";
 export default function Footer() {
   return (
     <main>
-      <div className="px-4 pt-16 mx-auto max-w-[1443px] md:px-24 lg:px-0">
+      <footer className="px-4 pt-16 mx-auto max-w-[1443px] md:px-24 lg:px-0">
         <div className="flex lg:flex-row justify-between flex-col gap-4">
-          <div>
+          <div className='lg:mx-0 mx-auto lg:text-start text-center'>
             <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Products
             </p>
@@ -31,7 +31,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className='lg:mx-0 mx-auto lg:text-start text-center'>
             <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Company
             </p>
@@ -54,7 +54,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className='lg:mx-0 mx-auto lg:text-start text-center'>
             <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Legal
             </p>
@@ -77,7 +77,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
+          <div className='lg:mx-0 mx-auto lg:text-start text-center'>
             <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Contact Us
             </p>
@@ -102,38 +102,38 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex justify-between mt-10 pt-10 pb-10 border-t lg:flex-row">
-            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-8 h-8 flex justify-center items-center">
+            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
               <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaLinkedin />
               </a>
             </div>
-            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-8 h-8 flex justify-center items-center">
+            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
               <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaSquareXTwitter />
               </a>
             </div>
-            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-8 h-8 flex justify-center items-center">
+            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
               <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaFacebookSquare />
               </a>
             </div>
-            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-8 h-8 flex justify-center items-center">
+            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
               <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaInstagramSquare />
               </a>
             </div>
-            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-8 h-8 flex justify-center items-center">
+            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
               <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <BsDiscord />
               </a>
             </div>
-            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-8 h-8 flex justify-center items-center">
+            <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
               <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaTelegram />
               </a>
             </div>
           </div>
-      </div>
+      </footer>
     </main>
   )
 }

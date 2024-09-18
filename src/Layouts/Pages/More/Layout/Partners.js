@@ -24,13 +24,14 @@ export default function Partners() {
                 <h2 className="max-w-[1443px] mb-6 font-sans lg:text-[20px] text-[15px] font-bold tracking-tight text-white sm:leading-none">
                   CURRENT PARTNERS
                 </h2>
-                <div className="flex items-center justify-center lg:w-32 lg:h-32 w-40 h-40 mb-4 rounded-full">
-                  <img src={LotusGlobal} alt='LotusGlobal' />
-                </div>
-                <div className="max-w-[1443px] mb-6">
+                <div className="flex flex-col mt-10 gap-5 items-center justify-center lg:w-full lg:h-32 w-full h-40 mb-4 rounded-full">
+                  <img src={LotusGlobal} alt='LotusGlobal' className='lg:w-60 w-40' />
                   <h2 className="max-w-[1443px] mb-6 font-sans lg:text-[18px] text-[14px] font-bold tracking-tight text-white leading-none">
                     Lotus Global Alliance Corp
                   </h2>
+                </div>
+                <div className="max-w-[1443px] mt-5 mb-6">
+
                   <div>
                     <p className="text-darkShadeB lg:text-[20px] text-[12px]">
                       Lotus Global Alliance is a company that specializes in Web3 marketing strategies. They offer a range of services to help businesses navigate the complex and rapidly evolving world of decentralized technology. Their team includes experts in areas such as blockchain, tokenization, NFTs, and the Metaverse.

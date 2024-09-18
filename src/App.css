@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* ReUseables */
@@ -29,8 +30,92 @@
   border-radius: 200px;
 }
 
+/* Roll */
+.rolldivLeft {
+  position: absolute;
+  top: 50px;
+  left: -220px;
+  overflow: hidden;
+}
+
+.rollLeft {
+  background: url('./Assets/pageSpinner.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 350.784px;
+  width: 350.784px;
+  height: 350.784px;
+  flex-shrink: 0;
+  position: relative;
+  animation: spinleft 10s infinite linear
+}
+
+.rolldivRight {
+  position: absolute;
+  top: 400px;
+  right: -180px;
+  overflow: hidden;
+}
+
+.rolldivRightH {
+  position: absolute;
+  top: 650px;
+  right: -180px;
+  overflow: hidden;
+}
+
+.rollRightH {
+  background: url('./Assets/pageSpinner.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350.784px;
+  height: 350.784px;
+  flex-shrink: 0;
+  position: relative;
+  animation: spinRight 10s infinite linear;
+}
+
+.rollRight {
+  background: url('./Assets/pageSpinner.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 350.784px;
+  height: 350.784px;
+  flex-shrink: 0;
+  position: relative;
+  animation: spinRight 10s infinite linear;
+}
+
+@keyframes spinleft {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinRight {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+
+.protocolBG {
+  background-image: url('./Assets/GataDarkBG.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .spin-btn {
-  /* background-color: var(--darkShade); */
   border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23E8CE6A' /%3E%3Cstop offset='25%25' stop-color='%23E8CE6A' /%3E%3Cstop offset='50%25' stop-color='%23E8CE6A' /%3E%3Cstop offset='100%25' stop-color='%23E8CE6A' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
 }
 
@@ -142,3 +227,14 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .rolldivRight {
+    top: 450px;
+    right: -200px;
+  }
+
+  .rolldivRightH {
+    top: 350px;
+    right: -200px;
+  }
+}

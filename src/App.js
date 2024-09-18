@@ -43,7 +43,7 @@ const LocationWrapper = ({ children }) => {
 function App() {
   return (
     <BrowserRouter>
-      <LocationWrapper>
+      {/* <LocationWrapper> */}
         <div className="App">
           <Routes>
             {/* Home */}
@@ -109,7 +109,7 @@ function App() {
             <Route path='/gatacoin' element={<GataCoinUi />} />
           </Routes>
         </div>
-      </LocationWrapper>
+      {/* </LocationWrapper> */}
     </BrowserRouter>
   );
 }

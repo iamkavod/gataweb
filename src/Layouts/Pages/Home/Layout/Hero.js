@@ -8,7 +8,7 @@ export default function Hero() {
       <section className="flex flex-col items-center justify-center px-2 pt-32 mx-auto max-w-screen-[1443px] lg:pt-44 md:px-0">
         <div className="flex flex-col items-center max-w-7xl md:px-8">
           <div className="mb-10 md:mx-auto sm:text-center max-w-7xl md:mb-12">
-            <h2 className="max-w-[1443px] mb-6 text-[15px] lg:text-[35px] text-center font-bold leading-none tracking-tight text-yellowShade  md:mx-auto uppercase font-bruno">
+            <h2 className="max-w-[1443px] mb-6 text-[20px] lg:text-[35px] text-center font-bold leading-none tracking-tight text-yellowShade  md:mx-auto uppercase font-bruno">
               Community Owned Decentralized E-Commerce and <br /> <span className='text-white'>LOGISTICS ECOSYSTEM</span>
             </h2>
             <p className="text-base text-white lg:text-[20px] text-[15px] text-center">
@@ -44,15 +44,18 @@ export default function Hero() {
 
 
       {/* SubHero */}
-      <section className="flex flex-col items-center justify-center px-2 pt-32 mx-auto max-w-screen md:px-0">
-
-        <div className="flex flex-col items-center max-w-7xl md:px-8">
+      <section className="relative flex flex-col items-center justify-center px-2 py-20 mx-auto max-w-screen md:px-0 overflow-hidden z-50">
+        <div className="rolldivLeft">
+          <div className="rollLeft"></div>
+        </div>
+        <div className="relative flex flex-col items-center max-w-7xl md:px-8">
           <div className="mb-10 md:mx-auto sm:text-center max-w-7xl md:mb-12">
             <h2 className="max-w-screen-[1443px] mb-6 text-[16px] lg:text-[35px] text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
               Take control, <span className='text-white'>Join Our Community, connect, buy, sell</span>  and <span className='text-white'>ship products</span> with confidence in an ecosystem where doing commerce online pays!
             </h2>
           </div>
         </div>
+        {/* <div> */}
         <img
           src={FractalCube}
           className="w-full max-w-screen-sm mx-auto rounded md:w-auto lg:max-w-screen-lg bounce"
@@ -65,6 +68,10 @@ export default function Hero() {
           >
             Our Framework
           </a>
+          {/* </div> */}
+        </div>
+        <div className="rolldivRightH">
+          <div className="rollRightH"></div>
         </div>
       </section>
 
