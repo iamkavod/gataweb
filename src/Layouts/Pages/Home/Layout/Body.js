@@ -56,10 +56,10 @@ export default function Body() {
   }, [isVisible]);
 
   return (
-    <main className='bg-darkShadeA h-full'>
+    <main className='bg-darkShadeA h-full '>
       {/* Features */}
-      <section className="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <h6 className="font-bold leading-5 text-yellowShade text-xl lg:text-3xl uppercase font-bruno text-center mb-20 mt-20">Our Features</h6>
+      <section className="px-4 pt-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+        <h6 className="font-bold leading-5 text-yellowShade text-[25px] lg:text-3xl uppercase font-bruno text-center mb-20 mt-4">Our Features</h6>
         <div className="grid gap-8 row-gap-5 lg:grid-cols-3">
 
           {/* Ease To Use */}
@@ -113,15 +113,15 @@ export default function Body() {
       <section className='protocolBG'>
         <div className="relative">
           <div className="relative">
-            <div className="px-4 pb-10 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20">
-              <h6 className="font-bold leading-5 text-yellowShade text-[20px] lg:text-[35px] uppercase font-bruno text-center mb-10 mt-20">The Protocol</h6>
+            <div className="px-4 pb-16 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20">
+              <h6 className="font-bold leading-5 text-yellowShade text-[26px] lg:text-[35px] uppercase font-bruno text-center mb-10 mt-20">The Protocol</h6>
               <div className="flex lg:flex-col flex-col-reverse gap-4 items-center justify-between xl:flex-row">
                 <div
                   ref={textRef}
                   className={`w-full max-w-xl xl:mb-0 xl:pr-16 xl:w-7/12 flex flex-col gap-4 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
                     }`}
                 >
-                  <h2 className="max-w-lg lg:text-[30px] text-[20px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:text-4xl sm:leading-none uppercase">
+                  <h2 className="max-w-lg lg:text-[30px] text-[23px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:text-4xl sm:leading-none uppercase">
                     GATA Network
                   </h2>
                   <p className="max-w-xl text-base text-white lg:text-[22px] text-[14px] lg:text-start text-center">
@@ -163,14 +163,14 @@ export default function Body() {
             />
             <div className="relative">
               <div className="px-4 py-20 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:pt-40 lg:pb-20">
-                <div className="flex lg:flex-row flex-col gap-4 items-center justify-between">
+                <div className="flex lg:flex-row flex-col flex-col-reverse gap-4 items-center justify-between">
                   <div
                     ref={textRef}
                     className={`w-full max-w-xl xl:mb-0 xl:pr-16 xl:w-7/12 flex flex-col gap-4 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
                       }`}
                   >
-                    <h2 className="max-w-lg lg:text-[30px] text-[20px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none uppercase">
-                      GATA Market
+                    <h2 className="max-w-lg lg:text-[30px] text-[23px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none uppercase">
+                      GATAMarket
                     </h2>
                     <p className="max-w-xl text-base text-black lg:text-[22px] text-[14px] lg:text-start text-center">
                       Join our exclusive, members-only community where together we drive the dCommerce ecosystem forward by collaborating, networking, and governing the ecosystem as like-minded users.
@@ -189,7 +189,7 @@ export default function Body() {
 
                   <div
                     ref={imageRef}
-                    className={`w-full max-w-xl xl:px-8 xl:w-5/12 lg:block flex justify-center ${isVisible.imageVisible ? 'slide-in-right' : 'hidden'
+                    className={`w-full max-w-xl xl:px-8 xl:w-5/12 lg:block flex justify-center lg:mt-0 -mt-10 ${isVisible.imageVisible ? 'slide-in-right' : 'hidden'
                       }`}
                   >
                     <img src={GataMarket} alt="The Network" className='lg:w-auto lg:h-auto w-auto h-60' />
@@ -210,19 +210,19 @@ export default function Body() {
             />
             <div className="relative">
               <div className="px-4 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20">
-                <div className="flex lg:flex-col flex-col gap-4 items-center justify-between xl:flex-row">
+                <div className="flex lg:flex-col flex-col flex-col-reverse gap-4 items-center justify-between xl:flex-row">
                   <div
                     ref={textRef}
                     className={`w-full max-w-xl xl:mb-0 xl:pr-16 xl:w-7/12 flex flex-col gap-4 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
                       }`}
                   >
-                    <h2 className="max-w-lg lg:text-[30px] text-[20px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none uppercase">
-                      GATA Now
+                    <h2 className="max-w-lg lg:text-[30px] text-[23px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none">
+                      GATANow
                     </h2>
                     <p className="max-w-xl text-base text-white lg:text-[22px] text-[14px] lg:text-start text-center">
                       Join our exclusive, members-only community where together we drive the dCommerce ecosystem forward by collaborating, networking, and governing the ecosystem as like-minded users.
                     </p>
-                    <div className='w-full flex lg:justify-start justify-center'>
+                    <div className='w-full flex lg:justify-start justify-center lg:mt-0 mt-5'>
                       <div className='lg:mt-0 rounded-lg spin-btn p-2 border border-blue-200'>
                         <a
                           href='/gatanow'
@@ -259,14 +259,14 @@ export default function Body() {
               alt=""
             />
             <div className="relative">
-              <div className="px-4 py-16 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:pt-40 lg:pb-20">
-                <div className="flex flex-col items-center justify-between xl:flex-row lg:mt-[200px]">
+              <div className="px-4 py-40 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:pt-40 lg:pb-20">
+                <div className="flex flex-col flex-col-reverse items-center justify-between xl:flex-row lg:mt-[200px]">
                   <div
                     ref={textRef}
                     className={`w-full max-w-xl xl:mb-0 xl:pr-16 xl:w-7/12 flex flex-col gap-4 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
                       }`}
                   >
-                    <h2 className="max-w-lg lg:text-[30px] text-[20px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none uppercase">
+                    <h2 className="max-w-lg lg:text-[30px] text-[23px] lg:text-start text-center font-bold tracking-tight text-yellowShade sm:leading-none uppercase">
                       GATA Tokenomics
                     </h2>
                     <p className="max-w-xl text-base text-black lg:text-[22px] text-[14px] lg:text-start text-center">
@@ -286,10 +286,10 @@ export default function Body() {
 
                   <div
                     ref={imageRef}
-                    className={`w-full max-w-[1443px] xl:px-8 xl:w-5/12 lg:flex lg:justify-end flex justify-center ${isVisible.imageVisible ? 'slide-in-right' : 'hidden'
+                    className={`w-full max-w-[1443px] xl:px-8 xl:w-5/12 lg:flex lg:justify-end flex justify-center lg:mt-0 -mt-28 ${isVisible.imageVisible ? 'slide-in-right' : 'hidden'
                       }`}
                   >
-                    <img src={GataTokenomics} alt="The Network" className='lg:w-auto lg:h-[400px] w-auto h-44' />
+                    <img src={GataTokenomics} alt="The Network" className='lg:w-auto lg:h-[400px] w-auto h-44 lg:mb-0 mb-6' />
                   </div>
                 </div>
               </div>
@@ -298,19 +298,22 @@ export default function Body() {
         </section>
 
         {/* Accordion */}
-        <section class="relative px-4 pt-40 pb-10 mx-auto bg-darkShadeA max-w-screen-[1443px] md:px-24 lg:px-8 lg:py-20 overflow-hidden">
+        <section class="relative px-4 pt-40 lg:mt-0 mt-10 pb-10 mx-auto bg-darkShadeA max-w-screen-[1443px] md:px-24 lg:px-8 lg:py-20 overflow-hidden">
           <div className="rolldivLeft">
             <div className="rollLeft"></div>
           </div>
           <div class="relative sm:mx-auto max-w-[1443px] z-10">
             <div class="flex flex-col mb-16 sm:text-center">
               <div class="max-w-[1443px] md:mx-auto sm:text-center">
-                <h2 class="max-w-[1443px] mb-2 lg:text-[35px] text-[20px] lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
+                <h2 class="lg:block hidden max-w-[1443px] mb-2 lg:mt-0 -mt-32 lg:text-[35px] text-[20px] lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
                   why join THE gata protocol?
+                </h2>
+                <h2 class="lg:hidden md:hidden block max-w-[1443px] mb-2 lg:mt-0 -mt-40 lg:text-[35px] text-[25px] lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
+                  why join <br /> the <br /> gata protocol?
                 </h2>
               </div>
             </div>
-            <div class="space-y-6">
+            <div class="space-y-6 lg:mt-0 -mt-28">
               <Item title="Connect Globally">
                 At the GATA Protocol, we believe in the power of connection. Our platform seamlessly connects buyers and sellers from across the globe, breaking down barriers and creating a truly global marketplace. Whether you're a small business looking to expand your reach or an individual searching for unique products, GATA Protocol brings the world to your fingertips. Join our community and discover a world of opportunities.
               </Item>

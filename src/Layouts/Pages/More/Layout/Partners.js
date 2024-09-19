@@ -24,7 +24,7 @@ export default function Partners() {
                 <h2 className="max-w-[1443px] mb-6 font-sans lg:text-[20px] text-[15px] font-bold tracking-tight text-white sm:leading-none">
                   CURRENT PARTNERS
                 </h2>
-                <div className="flex flex-col mt-10 gap-5 items-center justify-center lg:w-full lg:h-32 w-full h-40 mb-4 rounded-full">
+                <div className="flex flex-col lg:mb-32 lg:mt-20 mt-10 gap-5 items-center justify-center lg:w-full lg:h-32 w-full h-40 mb-4 rounded-full">
                   <img src={LotusGlobal} alt='LotusGlobal' className='lg:w-60 w-40' />
                   <h2 className="max-w-[1443px] mb-6 font-sans lg:text-[18px] text-[14px] font-bold tracking-tight text-white leading-none">
                     Lotus Global Alliance Corp

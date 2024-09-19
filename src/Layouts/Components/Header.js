@@ -63,7 +63,7 @@ const more = [
   { name: 'About Us', href: '/about', icon: FcAbout },
   { name: 'The Team', href: '/team', icon: RiTeamFill },
   { name: 'Our Partners', href: '/partners', icon: FcCollaboration },
-  { name: 'Conact Us', href: '/contacts', icon: LiaTeamspeak },
+  { name: 'Contact Us', href: '/contacts', icon: LiaTeamspeak },
 ]
 
 export default function Example() {
@@ -284,13 +284,13 @@ export default function Example() {
                     Economy
                     <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
+                  <DisclosurePanel className="mt-2 space-y-1">
                     {[...economy].map((item) => (
                       <DisclosureButton
                         key={item.name}
                         as="a"
                         href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
+                        className="block rounded-lg py-0 pl-6 pr-3 text-sm font-bold leading-7 text-white"
                       >
                         {item.name}
                       </DisclosureButton>
