@@ -6,8 +6,8 @@ import { BsDiscord } from "react-icons/bs";
 export default function Footer() {
   return (
     <main>
-      <footer className="px-4 pt-16 mx-auto max-w-[1443px] md:px-24 lg:px-0">
-        <div className="flex lg:flex-row justify-between flex-col gap-4">
+      <footer className="px-4 pt-16 mx-auto max-w-[1443px] md:px-0 lg:px-0" id='footer'>
+        <div className="flex lg:flex-row md:flex-row justify-between flex-col gap-4">
           <div className='lg:mx-0 mx-auto lg:text-start text-center'>
             <p className="font-bold tracking-wide text-yellowShade uppercase lg:text-3xl text-[15px]">
               Products
@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://app.gitbook.com/o/J231AtEg93kgH5j5SInZ/s/JGjx7dFjboUSja07ofQR/terms-of-service"
+                  href="https://termsofservice.gataprotocol.org/"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Terms of service
@@ -61,7 +61,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://app.gitbook.com/o/J231AtEg93kgH5j5SInZ/s/JGjx7dFjboUSja07ofQR/"
+                  href="https://privacypolicy.gataprotocol.org/"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Privacy Policy
@@ -84,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://app.gitbook.com/o/J231AtEg93kgH5j5SInZ/s/mEbp63adLOtzUtThA23K/"
+                  href="https://faq.gataprotocol.org/"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   FAQs

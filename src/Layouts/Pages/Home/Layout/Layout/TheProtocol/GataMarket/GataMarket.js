@@ -23,7 +23,7 @@ export default function GataMarketUI() {
                   <div className='w-full flex justify-center'>
                     <div className='lg:mt-0 mt-3 mb-3 rounded-lg spin-btn p-2 border'>
                       <a
-                        href='/'
+                        href='/buyandsellproducts'
                         className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none"
                       >
                         Buy/Sell Product now
@@ -106,7 +106,7 @@ export default function GataMarketUI() {
                   <div className='w-full flex justify-center'>
                     <div className='lg:mt-0 mt-0 rounded-lg spin-btn p-2 border'>
                       <a
-                        href='/'
+                        href='/buyandsellproducts'
                         className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-[20px] text-[12px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none"
                       >
                         Buy/Sell Product now

@@ -26,18 +26,18 @@ export default function Hero() {
         />
         <div className='lg:mt-20 mt-10 rounded-lg spin-btn p-2 border border-blue-200'>
           <a
-            href='/buyandsellproducts'
+            href='/get'
             className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none"
           >
-            Buy/Sell
+            Become a member
           </a>
         </div>
       </section>
 
       {/* Left Right Section */}
-      <div className='flex justify-between items-center max-w-screen lg:-mt-96 -mt-20 overflow-x-hidden'>
-        <img src={LeftAngle} alt='left' className='lg:w-auto lg:h-[900px] w-auto h-[300px]' />
-        <img src={RightAngle} alt='right' className='lg:w-auto lg:h-[900px] w-auto h-[300px] lg:-ml-0 -ml-10' />
+      <div className='flex justify-between items-center max-w-screen lg:-mt-96 -mt-20 overflow-x-hidden' id='heroAngle'>
+        <img src={LeftAngle} alt='left' className='lg:w-auto lg:h-[900px] w-auto h-[300px]' id='leftAngle'/>
+        <img src={RightAngle} alt='right' className='lg:w-auto lg:h-[900px] w-auto h-[300px] lg:-ml-0 -ml-10'  id='rightAngle' />
       </div>
 
       {/* HeroDivider */}

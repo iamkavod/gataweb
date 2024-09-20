@@ -18,6 +18,10 @@
   background-color: var(--darkShade);
 }
 
+.header {
+  overflow-x: hidden !important;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   background-color: var(--darkShade);
@@ -225,6 +229,8 @@
   animation: l4 1s infinite alternate;
 }
 
+
+
 @keyframes l4 {
   to {
     width: 25px;
@@ -241,5 +247,93 @@
   .rolldivRightH {
     top: 350px;
     right: -200px;
+  }
+}
+
+
+@media (max-width: 414px) {
+  #gatamarket {
+    padding-bottom: 120px;
+  }
+
+  #gatanow {
+    padding-top: 50px;
+  }
+
+  #gatatokenomics {
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #gatamarket #gatamarketimg {
+    margin: -25px 0;
+  }
+
+  #gatatokenomics {
+    padding: 4px 0;
+  }
+}
+
+@media only screen and (width: 820px) {
+  #gatamarket {
+    padding-bottom: 220px;
+  }
+
+  #gatanow {
+    padding-top: 50px;
+  }
+
+  #gatatokenomics {
+    padding-bottom: 240px;
+  }
+}
+
+@media only screen and (width: 344px) {
+  #gatatokenomics {
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (width: 540px) {
+  #gatamarket {
+    padding-bottom: 60px;
+  }
+
+  #gatatokenomics {
+    padding-bottom: 50px;
+  }
+}
+
+
+@media only screen and (width: 912px) {
+  #theprotocol {
+    padding: 100px 0;
+  }
+  #gatamarket {
+    padding-bottom: 300px;
+    padding-top: 200px;
+  }
+
+  #gatanow {
+    padding: 100px 0;
+  }
+
+  #gatatokenomics {
+    padding-top: 100px;
+    padding-bottom: 420px;
+  }
+}
+
+
+@media only screen and (width: 1024px) {
+  #heroAngle img {
+    width: 500px;
+    height: 500px;
+    margin: 150px 0;
+  }
+
+  #footer {
+    padding: 20px 20px;
   }
 }

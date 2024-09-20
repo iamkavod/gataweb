@@ -94,7 +94,7 @@ export default function Example() {
 
   return (
     <header className={`bg-${hasScrolled ? "darkShadeA" : "darkShadeA"
-      } fixed top-0 w-full z-[100] overflow-x-hidden`}>
+      } fixed top-0 w-full z-[100]`} id='header'>
       <nav aria-label="Global" className="mx-auto flex max-w-[1443px] items-center justify-between py-6 px-2 md:px-5 lg:px-8">
         <div className="flex">
           <a
@@ -115,9 +115,9 @@ export default function Example() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
+        <PopoverGroup className="hidden lg:flex md:flex items-center lg:gap-x-8">
           {/* Economy */}
-          <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
+          <PopoverGroup className="hidden lg:flex md:flex items-center lg:gap-x-8">
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-white focus:outline-none">
                 Economy
@@ -151,7 +151,7 @@ export default function Example() {
           </PopoverGroup>
 
           {/* Tokens */}
-          <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
+          <PopoverGroup className="hidden lg:flex md:flex items-center lg:gap-x-8">
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-white focus:outline-none">
                 Token
@@ -185,7 +185,7 @@ export default function Example() {
           </PopoverGroup>
 
           {/* Resources */}
-          <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
+          <PopoverGroup className="hidden lg:flex md:flex items-center lg:gap-x-8">
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-white focus:outline-none">
                 Resources
@@ -219,7 +219,7 @@ export default function Example() {
           </PopoverGroup>
 
           {/* More */}
-          <PopoverGroup className="hidden lg:flex items-center lg:gap-x-8">
+          <PopoverGroup className="hidden lg:flex md:flex items-center lg:gap-x-8">
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-1 text-lg font-bold leading-6 text-white focus:outline-none">
                 More

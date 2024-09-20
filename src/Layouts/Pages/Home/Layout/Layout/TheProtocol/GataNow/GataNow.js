@@ -18,12 +18,12 @@ export default function GataNowUI() {
                 </div>
 
                 <div className='flex flex-col gap-5'>
-                  <h1 className='text-yellowShade font-bold lg:text-3xl text-xl text-center capitalize leading-2'>GATANow <br /> our logistics services dapp</h1>
+                  <h1 className='text-yellowShade font-bold lg:text-3xl text-xl text-center leading-2'>GATANow <br /> Our Logistics Services dApp</h1>
                   <p className='text-darkShadeB text-center lg:text-[20px] text-[12px]'>GATANow is a paradigm shift in the world of logistics and delivery. Our cutting-edge decentralized platform leverages blockchain and artificial intelligence (AI) technologies to revolutionize the logistics and delivery industry. It streamlines and enhances the entire process of moving things of value from point to point. Ensuring users experience the utmost efficiency and reliability when managing shipments.</p>
                   <div className='w-full flex justify-center'>
                     <div className='lg:mt-0 mb-5 rounded-lg spin-btn p-2 border'>
                       <a
-                        href='/'
+                        href='/shipandtrack'
                         className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-[20px] text-[12px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none"
                       >
                         ship/deliver now
@@ -113,10 +113,10 @@ export default function GataNowUI() {
                   <div className='w-full flex justify-center'>
                     <div className='lg:mt-0 mt-0 rounded-lg spin-btn p-2 border'>
                       <a
-                        href='/'
+                        href='/shipandtrack'
                         className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-[20px] text-[12px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none"
                       >
-                        Buy/Sell Product now
+                        ship/deliver now
                       </a>
                     </div>
                   </div>

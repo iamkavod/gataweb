@@ -143,12 +143,12 @@ export default function Body() {
       </section>
 
       {/* The Protocol */}
-      <section className='protocolBG'>
+      <section className='protocolBG' id='theprotocol'>
         <div className="relative">
           <div className="relative">
-            <div className="px-4 pb-16 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20">
+            <div className="px-4 pb-16 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20 md:pb-20">
               <h6 className="font-bold leading-5 text-yellowShade text-[26px] lg:text-[35px] uppercase font-bruno text-center mb-10 mt-20">The Protocol</h6>
-              <div className="flex lg:flex-col flex-col-reverse gap-4 items-center justify-between xl:flex-row">
+              <div className="flex lg:flex-row flex-col-reverse gap-4 items-center justify-between xl:flex-row">
                 <div
                   ref={textRef}
                   className={`w-full max-w-xl xl:mb-0 xl:pr-16 xl:w-7/12 flex flex-col gap-4 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
@@ -188,14 +188,14 @@ export default function Body() {
       <div className='pb-40'>
         {/* Gata Market */}
         <section className='lg:mb-0 mb-20'>
-          <div className="relative lg:pb-[455px]">
+          <div className="relative lg:pb-[455px] md:pb-[205px]" id='gatamarket'>
             <img
               src={GataWhiteBg}
               className="absolute inset-0 object-cover lg:w-full lg:h-full lg:w-full h-screen"
               alt=""
             />
             <div className="relative">
-              <div className="px-4 py-20 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:pt-40 lg:pb-20">
+              <div className="px-4 py-20 md:py-40 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:pt-40 lg:pb-20">
                 <div className="flex lg:flex-row flex-col flex-col-reverse gap-4 items-center justify-between">
                   <div
                     ref={textRef}
@@ -225,7 +225,7 @@ export default function Body() {
                     className={`w-full max-w-xl xl:px-8 xl:w-5/12 lg:block flex justify-center lg:mt-0 -mt-10 ${isVisible.imageVisible ? 'slide-in-right' : 'hidden'
                       }`}
                   >
-                    <img src={GataMarket} alt="The Network" className='lg:w-auto lg:h-auto w-auto h-60' />
+                    <img src={GataMarket} alt="The Network" className='lg:w-auto lg:h-auto w-auto h-60' id='gatamarketimg'/>
                   </div>
                 </div>
               </div>
@@ -234,7 +234,7 @@ export default function Body() {
         </section>
 
         {/* Gata Now */}
-        <section className=''>
+        <section className='' id='gatanow'>
           <div className="relative">
             <img
               src={GataDarkBg}
@@ -243,7 +243,7 @@ export default function Body() {
             />
             <div className="relative">
               <div className="px-4 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20">
-                <div className="flex lg:flex-col flex-col flex-col-reverse gap-4 items-center justify-between xl:flex-row">
+                <div className="flex lg:flex-row flex-col flex-col-reverse gap-4 items-center justify-between xl:flex-row">
                   <div
                     ref={textRef}
                     className={`w-full max-w-xl xl:mb-0 xl:pr-16 xl:w-7/12 flex flex-col gap-4 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
@@ -285,7 +285,7 @@ export default function Body() {
       <div>
         {/* Gata Tokenomics */}
         <section>
-          <div className="relative lg:pb-[610px]">
+          <div className="relative lg:pb-[610px] md:pb-[150px]" id='gatatokenomics'>
             <img
               src={GataWhiteBg2}
               className="absolute inset-0 object-cover lg:w-full lg:h-full lg:w-full h-screen"
@@ -293,7 +293,7 @@ export default function Body() {
             />
             <div className="relative">
               <div className="px-4 py-40 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:pt-40 lg:pb-20">
-                <div className="flex flex-col flex-col-reverse items-center justify-between xl:flex-row lg:mt-[200px]">
+                <div className="flex lg:flex-row flex-col-reverse items-center justify-between xl:flex-row lg:mt-[200px]">
                   <div
                     ref={textRef}
                     className={`w-full max-w-xl xl:mb-0 xl:pr-16 xl:w-7/12 flex flex-col gap-4 ${isVisible.textVisible ? 'slide-in-left' : 'hidden'
@@ -319,7 +319,7 @@ export default function Body() {
 
                   <div
                     ref={imageRef}
-                    className={`w-full max-w-[1443px] xl:px-8 xl:w-5/12 lg:flex lg:justify-end flex justify-center lg:mt-0 -mt-28 ${isVisible.imageVisible ? 'slide-in-right' : 'hidden'
+                    className={`w-full max-w-[1443px] xl:px-8 xl:w-5/12 lg:flex lg:justify-end flex justify-center lg:mt-0 md:mt-20 -mt-28 ${isVisible.imageVisible ? 'slide-in-right' : 'hidden'
                       }`}
                   >
                     <img src={GataTokenomics} alt="The Network" className='lg:w-auto lg:h-[400px] w-auto h-44 lg:mb-0 mb-6' />
@@ -331,17 +331,17 @@ export default function Body() {
         </section>
 
         {/* Accordion */}
-        <section class="relative px-4 pt-40 lg:mt-0 mt-10 pb-10 mx-auto bg-darkShadeA max-w-screen-[1443px] md:px-24 lg:px-8 lg:py-20 overflow-hidden">
+        <section class="relative px-4 pt-40 lg:mt-0 mt-10 pb-10 mx-auto bg-darkShadeA max-w-screen-[1443px] md:px-24 lg:px-8 lg:py-20 overflow-hidden z-[20]" id='accordion'>
           <div className="rolldivLeft">
             <div className="rollLeft"></div>
           </div>
           <div class="relative sm:mx-auto max-w-[1443px] z-10">
             <div class="flex flex-col mb-16 sm:text-center">
               <div class="max-w-[1443px] md:mx-auto sm:text-center">
-                <h2 class="lg:block hidden max-w-[1443px] mb-2 lg:mt-0 -mt-32 lg:text-[35px] text-[20px] lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
+                <h2 class="lg:block hidden max-w-[1443px] mb-2 lg:mt-0 md:mt-0 -mt-32 lg:text-[35px] text-[20px] lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
                   why join THE gata protocol?
                 </h2>
-                <h2 class="lg:hidden md:hidden block max-w-[1443px] mb-2 lg:mt-0 -mt-40 lg:text-[35px] text-[25px] lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
+                <h2 class="lg:hidden md:block block max-w-[1443px] mb-2 lg:mt-0 -mt-40 lg:text-[35px] md:text-[30px] text-[25px] lg:text-start text-center font-bold leading-none tracking-tight text-yellowShade md:mx-auto uppercase font-bruno">
                   why join <br /> the <br /> gata protocol?
                 </h2>
               </div>
@@ -395,7 +395,7 @@ export default function Body() {
       </div>
 
       {/* Get In Touch */}
-      <section>
+      <section className='md:px-8'>
         <div className="relative">
           <h1 className='text-darkShadeB text-center font-bold py-2 lg:text-[20px] text-[15px]'>Get in touch <span className='text-white'>with us</span></h1>
           <div className="relative bg-darkShadeA bg-opacity-30 max-w-[1443px] flex justify-center items-center w-full mx-auto">

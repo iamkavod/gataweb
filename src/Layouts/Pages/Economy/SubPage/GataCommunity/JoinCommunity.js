@@ -24,8 +24,8 @@ export default function ShipTrackPackage() {
               <div className='w-full flex justify-center'>
                 <div className='lg:mt-0 mt-3 rounded-lg spin-btn p-2 border'>
                   <a
-                    href='/'
-                    className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
+                    href='/get'
+                    className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-[14px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
                   >
                     Become a Member
                   </a>
@@ -122,9 +122,9 @@ export default function ShipTrackPackage() {
             <div className='lg:mt-5 mt-3 rounded-lg spin-btn p-2 border'>
               <a
                 href='https://linktr.ee/gatabusinessnetwork'
-                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
+                className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[14px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
-                Join the GATA Community Today!
+                Join the GATA Community
               </a>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function ShipTrackPackage() {
           <div className='w-full flex justify-center pb-10'>
             <div className='lg:mt-5 mt-3 rounded-lg spin-btn p-2 border'>
               <a
-                href='/'
+                href='https://linktr.ee/gatabusinessnetwork'
                 className="inline-flex items-center justify-center w-full lg:h-16 h-10 lg:px-20 px-4 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Secure Your Membership and Join the GATA Community!

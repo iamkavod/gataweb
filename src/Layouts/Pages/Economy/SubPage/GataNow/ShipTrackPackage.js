@@ -24,7 +24,7 @@ export default function ShipTrackPackage() {
               <div className='w-full flex justify-center'>
                 <div className='lg:mt-0 mt-3 rounded-lg spin-btn p-2 border'>
                   <a
-                    href='https://forms.gle/W4xPQf4SVBx5mDwv7'
+                    href='https://docs.google.com/forms/d/e/1FAIpQLSdePMyS3OE5bZKXEqFAGBXvzpJ6mTbTjjAnJ5seR_QJtaNY_A/viewform'
                     className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
                   >
                     Join the Beta
@@ -97,7 +97,7 @@ export default function ShipTrackPackage() {
             <div className='w-full flex justify-center'>
               <div className='lg:mt-5 mt-3 rounded-lg spin-btn p-2 border'>
                 <a
-                  href='/'
+                  href='https://docs.google.com/forms/d/e/1FAIpQLSdePMyS3OE5bZKXEqFAGBXvzpJ6mTbTjjAnJ5seR_QJtaNY_A/viewform'
                   className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
                 >
                   Join the Beta and Experience Seamless Shipping!
@@ -144,7 +144,7 @@ export default function ShipTrackPackage() {
           <div className='w-full flex justify-center'>
             <div className='lg:mt-5 mt-3 rounded-lg spin-btn p-2 border'>
               <a
-                href='/'
+                href='https://docs.google.com/forms/d/e/1FAIpQLSdePMyS3OE5bZKXEqFAGBXvzpJ6mTbTjjAnJ5seR_QJtaNY_A/viewform'
                 className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Unlock These Benefits – Join the Beta Now!
@@ -195,7 +195,7 @@ export default function ShipTrackPackage() {
           <div className='w-full flex justify-center'>
             <div className='lg:mt-0 mt-3 rounded-lg spin-btn p-2 border'>
               <a
-                href='/'
+                href='https://docs.google.com/forms/d/e/1FAIpQLSdePMyS3OE5bZKXEqFAGBXvzpJ6mTbTjjAnJ5seR_QJtaNY_A/viewform'
                 className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Secure your spot in the GATANOW Beta
@@ -226,7 +226,7 @@ export default function ShipTrackPackage() {
           <div className='w-full flex justify-center pb-10'>
             <div className='lg:mt-10 mt-3 rounded-lg spin-btn p-2 border'>
               <a
-                href='/'
+                href='https://docs.google.com/forms/d/e/1FAIpQLSdePMyS3OE5bZKXEqFAGBXvzpJ6mTbTjjAnJ5seR_QJtaNY_A/viewform'
                 className="inline-flex items-center justify-center w-full lg:h-12 h-10 lg:px-20 px-10 lg:text-xl text-[8px] font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize text-center"
               >
                 Join the Beta and Start Shipping with GATANOW!
