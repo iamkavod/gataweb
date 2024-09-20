@@ -1,5 +1,43 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Community, Dropdown, Ease, GataDarkBg, GataMarket, GatamarketWhiteBg, GataNow, GataTokenomics, GataWhiteBg, GataWhiteBg2, HomeHeroImg, ProtocolBg, Secure, TheNetwork } from '../../../../Assets'
+import { Community, Dropdown, Ease, GataDarkBg, GataMarket, GatamarketWhiteBg, GataNow, GataTokenomics, GataWhiteBg, GataWhiteBg2, HomeHeroImg, Secure, TheNetwork } from '../../../../Assets'
+
+const items = [
+  {
+    title: "Connect Globally",
+    content:
+      "At the GATA Protocol, we believe in the power of connection. Our platform seamlessly connects buyers and sellers from across the globe, breaking down barriers and creating a truly global marketplace. Whether you're a small business looking to expand your reach or an individual searching for unique products, GATA Protocol brings the world to your fingertips. Join our community and discover a world of opportunities.",
+  },
+  {
+    title: "Ownership & Control",
+    content:
+      "At GATA Protocol, we believe you should have full ownership and control over your digital assets. Our decentralized approach means you control your data and transactions, not third-party intermediaries. Take charge of your online presence and assets with GATA Protocol, where ownership is a right, not a privilege.",
+  },
+  {
+    title: "Trusted Platform",
+    content:
+      "In a world where trust is paramount, GATA Protocol stands as a beacon of reliability. We partner with trusted platforms and businesses to enhance your shopping and logistical experiences. When you choose GATA Protocol, you're not just choosing a marketplace – you're choosing a network of reputable and dependable partners dedicated to your satisfaction.",
+  },
+  {
+    title: "Empowering Individuals & Businesses",
+    content:
+      "We're not just a platform; we're a community. GATA Protocol empowers individuals and businesses alike to thrive in the digital age. Whether you're a budding entrepreneur or a seasoned business owner, our ecosystem offers the tools and support you need to succeed. Join us and unleash your full potential.",
+  },
+  {
+    title: "Advanced Security",
+    content:
+      "Your safety is our priority. GATA Protocol employs cutting-edge security measures to protect your transactions and personal information. We utilize blockchain technology to ensure the integrity of every transaction, making fraud and data breaches a thing of the past. Trust in a platform that goes above and beyond to safeguard your digital assets and privacy.",
+  },
+  {
+    title: "Transparent Transactions",
+    content:
+      "Transparency breeds trust. GATA Protocol leverages blockchain technology to make every transaction transparent and tamper-proof. Say farewell to hidden fees and murky processes. With us, you'll have a clear view of pricing, shipping costs, and more. Shop with confidence, knowing that transparency is at the heart of every transaction.",
+  },
+  {
+    title: "Decentralized & Decisive",
+    content:
+      "Decentralization means you have a say. At GATA Protocol, we value your voice. Our decentralized governance model empowers you to participate in decision-making, ensuring that the platform evolves according to your needs. Be part of a community that is decisive, democratic, and dedicated to your vision of success.",
+  },
+];
 
 export default function Body() {
   const [isVisible, setIsVisible] = useState({ textVisible: false, imageVisible: false });
@@ -7,32 +45,27 @@ export default function Body() {
   const textRef = useRef(null);
   const imageRef = useRef(null);
 
-  // Accordion
-  const Item = ({ title, children }) => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null);
+  const dropdownRefs = useRef([]);
 
-    return (
-      <div className="rounded-lg shadow-sm bg-darkShadeC lg:py-3">
-        <button
-          type="button"
-          aria-label="Open item"
-          className="flex items-center justify-between w-full lg:px-4 px-2 py-1 px-4 focus:outline-none text-white"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <p className="lg:text-[20px] text-[12px] text-start font-bold capitalize">{title}</p>
-          <div className="flex items-center justify-center w-8 h-8">
-            <img src={Dropdown} alt='Dropdown' className={`w-3 text-gray-600 transition-transform duration-200 ${isOpen ? 'transform rotate-180' : ''
-              }`} />
-          </div>
-        </button>
-        {isOpen && (
-          <div className="p-4 pt-0">
-            <p className="text-white lg:text-[20px] text-[14px] text-start">{children}</p>
-          </div>
-        )}
-      </div>
-    );
+  // Toggle dropdown open/close
+  const toggleDropdown = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
+
+  // Handle click outside to close all dropdowns
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRefs.current.every(ref => ref && !ref.contains(event.target))) {
+        setOpenIndex(null); // Close all dropdowns if clicked outside
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -313,28 +346,46 @@ export default function Body() {
                 </h2>
               </div>
             </div>
-            <div class="space-y-6 lg:mt-0 -mt-28">
-              <Item title="Connect Globally">
-                At the GATA Protocol, we believe in the power of connection. Our platform seamlessly connects buyers and sellers from across the globe, breaking down barriers and creating a truly global marketplace. Whether you're a small business looking to expand your reach or an individual searching for unique products, GATA Protocol brings the world to your fingertips. Join our community and discover a world of opportunities.
-              </Item>
-              <Item title="ownership & control">
-                At GATA Protocol, we believe you should have full ownership and control over your digital assets. Our decentralized approach means you control your data and transactions, not third-party intermediaries. Take charge of your online presence and assets with GATA Protocol, where ownership is a right, not a privilege.
-              </Item>
-              <Item title="trusted platform">
-                In a world where trust is paramount, GATA Protocol stands as a beacon of reliability. We partner with trusted platforms and businesses to enhance your shopping and logistical experiences. When you choose GATA Protocol, you're not just choosing a marketplace – you're choosing a network of reputable and dependable partners dedicated to your satisfaction.
-              </Item>
-              <Item title="empowering individuals & businesses">
-                We're not just a platform; we're a community. GATA Protocol empowers individuals and businesses alike to thrive in the digital age. Whether you're a budding entrepreneur or a seasoned business owner, our ecosystem offers the tools and support you need to succeed. Join us and unleash your full potential.
-              </Item>
-              <Item title="advanced security">
-                Your safety is our priority. GATA Protocol employs cutting-edge security measures to protect your transactions and personal information. We utilize blockchain technology to ensure the integrity of every transaction, making fraud and data breaches a thing of the past. Trust in a platform that goes above and beyond to safeguard your digital assets and privacy.
-              </Item>
-              <Item title="transparent transactions">
-                Transparency breeds trust. GATA Protocol leverages blockchain technology to make every transaction transparent and tamper-proof. Say farewell to hidden fees and murky processes. With us, you'll have a clear view of pricing, shipping costs, and more. Shop with confidence, knowing that transparency is at the heart of every transaction.
-              </Item>
-              <Item title="decentralized & decisive">
-                Decentralization means you have a say At GATA Protocol, we value your voice. Our decentralized governance model empowers you to participate in decision-making, ensuring that the platform evolves according to your needs. Be part of a community that is decisive, democratic, and dedicated to your vision of success.
-              </Item>
+            <div className="space-y-6 lg:mt-0 -mt-28">
+              {items.map((item, index) => (
+                <div
+                  key={index}
+                  className="rounded-lg shadow-sm bg-darkShadeC lg:py-3 transition-all duration-300"
+                  ref={(el) => dropdownRefs.current[index] = el}
+                >
+                  <button
+                    type="button"
+                    aria-label={`Open ${item.title}`}
+                    className="flex items-center justify-between w-full lg:px-4 px-2 py-1 px-4 focus:outline-none text-white"
+                    onClick={() => toggleDropdown(index)}
+                  >
+                    <p className="lg:text-[20px] text-[12px] text-start font-bold capitalize">
+                      {item.title}
+                    </p>
+                    <div className="flex items-center justify-center w-8 h-8">
+                      <img
+                        src={Dropdown} 
+                        alt="Dropdown"
+                        className={`w-3 text-gray-600 transition-transform duration-200 ${openIndex === index ? 'transform rotate-180' : ''
+                          }`}
+                      />
+                    </div>
+                  </button>
+                  <div
+                    className={`overflow-hidden transition-max-height duration-300 ${openIndex === index ? 'max-h-screen' : 'max-h-0'
+                      }`}
+                    style={{
+                      maxHeight: openIndex === index ? '500px' : '0', 
+                    }}
+                  >
+                    <div className="p-4 pt-0">
+                      <p className="text-white lg:text-[20px] text-[14px] text-start">
+                        {item.content}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className="rolldivRight">

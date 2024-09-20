@@ -24,7 +24,7 @@ export default function BuySell() {
               <div className='w-full flex justify-center'>
                 <div className='lg:mt-0 mt-3 rounded-lg spin-btn p-2 border'>
                   <a
-                    href='/'
+                    href='https://forms.gle/W4xPQf4SVBx5mDwv7'
                     className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none capitalize"
                   >
                     Join the Beta

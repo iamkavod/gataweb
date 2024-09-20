@@ -14,7 +14,7 @@ export default function Roadmap() {
                     <h1 className='lg:text-4xl text-xl text-yellowShade font-bold'>Our Roadmap</h1>
                 </div>
                 <div className="flex lg:gap-10 gap-1">
-                    <div className='border border-darkShadeB overflow-y-hidden px-2 lg:w-16 w-10 lg:h-[120vh] h-[120vh] flex justify-center items-center rounded-lg'>
+                    <div className='border border-darkShadeB overflow-y-hidden px-2 lg:w-16 w-10 lg:h-[120vh] h-[90vh] flex justify-center items-center rounded-lg'>
                         <img src={RoadmapLine} className='w-[1px] h-full' />
                     </div>
                     <div className='lg:pt-10 pt-5 flex flex-col'>
@@ -43,12 +43,12 @@ export default function Roadmap() {
                             </div>
                         </div>
                         <div className="flex">
-                            <div className='flex items-start gap-10'>
+                            <div className='flex items-start gap-2'>
                                 {/* image */}
-                                <div className='flex justify-start items-center gap-2 hidden'>
-                                    <img src={RoadmapRectangle} className='w-[38px] h-auto' />
-                                    <div className='border border-darkShadeB p-4 rounded-sm'>
-                                        <img src={RoadmapHorizontalLine} className='w-30 h-[1px]' />
+                                <div className='flex justify-start items-center gap-0 mt-12'>
+                                    <img src={RoadmapRectangle} className='w-[30px] h-auto' />
+                                    <div className='border border-darkShadeB py-3 rounded-sm'>
+                                        <img src={RoadmapHorizontalLine} className='w-full h-[1px]' />
                                     </div>
                                 </div>
                                 {/* Text */}

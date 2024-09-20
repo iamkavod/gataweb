@@ -200,6 +200,11 @@
   }
 }
 
+
+.transition-max-height {
+  transition: max-height 0.3s ease-in-out;
+}
+
 .spin-image {
   animation: spinY 10s linear infinite; 
   cursor: grab;

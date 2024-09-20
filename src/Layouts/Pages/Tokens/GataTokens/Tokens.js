@@ -22,16 +22,16 @@ export default function Tokens() {
             <li className='text-darkShadeB lg:text-xl text-sm'>Token Type: <span className='text-white font-bold'>ERC-20</span></li>
             <li className='text-darkShadeB lg:text-xl text-sm'>Decimal: <span className='text-white font-bold'>18</span></li>
             <li className='text-darkShadeB lg:text-xl text-sm'>Blockchain: <span className='text-white font-bold'>Optimism</span></li>
-            <li className='text-darkShadeB lg:text-xl text-sm'>Total Supply: <span className='text-white font-bold'>10,000,000,000.00 GATA</span></li>
+            <li className='text-darkShadeB lg:text-xl text-sm'>Total mint: <span className='text-white font-bold'>Not fixed</span></li>
             <li className='text-darkShadeB lg:text-xl text-sm'>Circulating Supply: <span className='text-white font-bold'>TBA</span></li>
-            <li className='text-darkShadeB lg:text-xl text-sm'>Initial Supply: <span className='text-white font-bold'>1,000,000,000.00 GATA</span></li>
-            <li className='text-darkShadeB lg:text-xl text-sm'>Initial token price <span className='text-white font-bold'>$0.00015 per GATA</span></li>
+            <li className='text-darkShadeB lg:text-xl text-sm'>Initial mint: <span className='text-white font-bold'>100,000,000 GATA</span></li>
+            <li className='text-darkShadeB lg:text-xl text-sm'>Initial token price <span className='text-white font-bold'>$0.0005 per GATA</span></li>
             <li className='text-darkShadeB lg:text-xl text-sm'>Contract Address <span className='text-white font-bold'>TBA</span></li>
           </ul>
         </div>
 
         {/* Disclaimer */}
-        <div className='grid grid-cols-1 w-[300px]'>
+        <div className='grid grid-cols-1 w-full'>
           <div className='lg:w-[500px] border-4 border-yellowShade p-5 flex flex-col justify-center items-center gap-4'>
             <p className='lg:text-2xl text-xl text-yellowShade font-bold'>Disclaimer</p>
             <p className='lg:text-xl text-sm text-darkShadeB text-center'>GATA tokens are not for investment but are essential for various purposes within the ecosystem.</p>

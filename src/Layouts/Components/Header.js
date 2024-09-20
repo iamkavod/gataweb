@@ -40,8 +40,8 @@ import { FaCoins } from "react-icons/fa6";
 // Economy Menu
 const economy = [
   { name: 'GATA Community', href: '/jointhecommunity', icon: RiCommunityFill },
-  { name: 'GATA Market', href: '/buyandsellproducts', icon: LiaLandmarkSolid },
-  { name: 'GATA Now', href: '/shipandtrack', icon: FaShip },
+  { name: 'GATAMARKET', href: '/buyandsellproducts', icon: LiaLandmarkSolid },
+  { name: 'GATANow', href: '/shipandtrack', icon: FaShip },
 ]
 
 // Token Menu
@@ -53,9 +53,9 @@ const token = [
 // Resources Menu
 const resources = [
   { name: 'RoadMap', href: '/roadmap', icon: GoProjectRoadmap },
-  { name: 'Documentations', href: '/documentations', icon: IoMdDocument },
+  { name: 'Documentations', href: 'https://docs.gataprotocol.org/', icon: IoMdDocument },
   { name: 'Latest News', href: '/latestnews', icon: IoNewspaperSharp },
-  { name: 'Blog', href: '/blog', icon: GrBlog },
+  { name: 'Blog', href: 'https://gataprotocol.medium.com/', icon: GrBlog },
 ]
 
 // More Menu
@@ -70,6 +70,12 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleDisclosureClick = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -88,7 +94,7 @@ export default function Example() {
 
   return (
     <header className={`bg-${hasScrolled ? "darkShadeA" : "darkShadeA"
-      } fixed top-0 w-full z-[100]`}>
+      } fixed top-0 w-full z-[100] overflow-x-hidden`}>
       <nav aria-label="Global" className="mx-auto flex max-w-[1443px] items-center justify-between py-6 px-2 md:px-5 lg:px-8">
         <div className="flex">
           <a
@@ -275,91 +281,121 @@ export default function Example() {
               <XMarkIcon aria-hidden="true" className="h-6 w-6" />
             </button>
           </div>
-          <div className="mt-6 flow-root px-1">
-            <div className="-my-6 divide-y divide-gray-500/10">
+          <div className="-my-6 divide-y divide-gray-500/10 px-1">
+            <div className="space-y-2 py-6">
               <div className="space-y-2 py-6">
                 {/* Economy */}
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white underline">
+                <div className="-mx-3">
+                  <div
+                    className={`group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white cursor-pointer ${openIndex === 0 ? 'no-underline' : 'underline'}`}
+                    onClick={() => handleDisclosureClick(0)}
+                  >
                     Economy
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-1">
-                    {[...economy].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-0 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className={`h-5 w-5 flex-none transition-transform duration-300 ${openIndex === 0 ? "rotate-180" : ""}`}
+                    />
+                  </div>
+                  {openIndex === 0 && (
+                    <div className="mt-2 space-y-1">
+                      {economy.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className="block rounded-lg py-0 pl-6 pr-3 text-sm font-bold leading-7 text-white underline"
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
                 {/* Token */}
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white underline">
+                <div className="-mx-3">
+                  <div
+                    className={`group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white cursor-pointer ${openIndex === 1 ? 'no-underline' : 'underline'}`}
+                    onClick={() => handleDisclosureClick(1)}
+                  >
                     Token
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...token].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className={`h-5 w-5 flex-none transition-transform duration-300 ${openIndex === 1 ? "rotate-180" : ""}`}
+                    />
+                  </div>
+                  {openIndex === 1 && (
+                    <div className="mt-2 space-y-2">
+                      {token.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white underline"
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
                 {/* Resources */}
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white underline">
+                <div className="-mx-3">
+                  <div
+                    className={`group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white cursor-pointer ${openIndex === 2 ? 'no-underline' : 'underline'}`}
+                    onClick={() => handleDisclosureClick(2)}
+                  >
                     Resources
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...resources].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className={`h-5 w-5 flex-none transition-transform duration-300 ${openIndex === 2 ? "rotate-180" : ""}`}
+                    />
+                  </div>
+                  {openIndex === 2 && (
+                    <div className="mt-2 space-y-2">
+                      {resources.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white underline"
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
                 {/* More */}
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white underline">
+                <div className="-mx-3">
+                  <div
+                    className={`group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold leading-7 text-white cursor-pointer ${openIndex === 3 ? 'no-underline' : 'underline'}`}
+                    onClick={() => handleDisclosureClick(3)}
+                  >
                     More
-                    <ChevronDownIcon aria-hidden="true" className="h-5 w-5 flex-none group-data-[open]:rotate-180" />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...more].map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
+                    <ChevronDownIcon
+                      aria-hidden="true"
+                      className={`h-5 w-5 flex-none transition-transform duration-300 ${openIndex === 3 ? "rotate-180" : ""}`}
+                    />
+                  </div>
+                  {openIndex === 3 && (
+                    <div className="mt-2 space-y-2">
+                      {more.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className="block rounded-lg py-2 pl-6 pr-3 text-sm font-bold leading-7 text-white underline"
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                {/* Contact Button */}
                 <a
-                  href={'/contact'}
-                  class="hidden items-center justify-center h-12 px-8 font-bold text-lg tracking-wide text-whiteShade transition duration-200 shadow-md bg-yellowShade hover:opacity-[.9] focus:shadow-outline focus:outline-none rounded-lg"
+                  href="/contact"
+                  className="hidden items-center justify-center h-12 px-8 font-bold text-lg tracking-wide text-whiteShade transition duration-200 shadow-md bg-yellowShade hover:opacity-[.9] focus:shadow-outline focus:outline-none rounded-lg"
                   aria-label="Contact Us"
                 >
                   Lunch

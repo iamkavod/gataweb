@@ -80,13 +80,8 @@ export default function GataCoin() {
                   </div>
                 </div>
 
-                <div className='flex flex-col gap-3 pt-10'>
+                <div className='flex flex-col gap-3 pt-4'>
                   <h1 className='text-yellowShade font-bold lg:text-3xl text-xl'>GATA Token</h1>
-                  <p className='text-darkShadeB lg:text-[20px] text-[12px]'>GATA Membership NFTs are your keys to access particular ecosystem services and to unlock exclusive benefits and privileges within the GATA Protocol Ecosystem. It represents your active participation and commitment in the community.</p>
-                </div>
-
-                <div className='flex flex-col gap-3 pt-10'>
-                  <h1 className='text-yellowShade font-bold lg:text-3xl text-xl'>GATA Membership NFTs</h1>
                   <p className='text-darkShadeB lg:text-[20px] text-[12px]'>The GATA Token serves as the native utility token within the decentralized eCommerce and logistics ecosystem of the GATA Protocol. It is designed to facilitate transactions, incentivize participation, and power various services within the platform. This document outlines the comprehensive tokenomics of the GATA Token, detailing its distribution, use cases, governance, initial token price, initial market capitalization, and other relevant information.</p>
 
                   <div className='flex flex-col gap-3'>
@@ -105,13 +100,13 @@ export default function GataCoin() {
                         </ul>
                       </div>
                       <div className='gap-2'>
-                        <p className='text-white font-bol lg:text-md text-xs'>Initial supply:</p>
+                        <p className='text-white font-bol lg:text-md text-xs'>Initial mint:</p>
                         <ul className='list-disc flex flex-col gap-5 ml-6'>
                           <li className='text-darkShadeB lg:text-[20px] text-[12px]'>100,000,000 GATA</li>
                         </ul>
                       </div>
                       <div className='gap-2'>
-                        <p className='text-white font-bol lg:text-md text-xs'>Total supply:</p>
+                        <p className='text-white font-bol lg:text-md text-xs'>Total mint:</p>
                         <ul className='list-disc flex flex-col gap-5 ml-6'>
                           <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Not fixed</li>
                         </ul>
@@ -173,20 +168,20 @@ export default function GataCoin() {
                     <div className='flex flex-col gap-3'>
                       <div className='flex flex-col gap-8'>
                         <div className='flex flex-col gap-3'>
-                          <p className='text-white font-bol lg:text-md text-xs'>Community and Ecosystem Growth Fund 5%</p>
-                          <div className='gap-2'>
+                          <p className='text-white font-bold lg:text-md text-[13px]'>Community and Ecosystem Growth Fund adjust to 10% while Reserve Funds: 5%</p>
+                          {/* <div className='gap-2'>
                             <p className='text-white font-bol lg:text-md text-xs'>Allocation:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>500,000,000 GATA Tokens</li>
                             </ul>
-                          </div>
-                          <div className='gap-2'>
+                          </div> */}
+                          <div className='gap-2 ml-3'>
                             <p className='text-white font-bol lg:text-md text-xs'>Purpose:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Incentivize user participation, reward contributors, and foster ecosystem growth.</li>
                             </ul>
                           </div>
-                          <div className='gap-2'>
+                          <div className='gap-2 ml-3'>
                             <p className='text-white font-bol lg:text-md text-xs'>Control:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Managed by a multi-signature (multi-sig) wallet controlled by community members and team members.</li>
@@ -195,20 +190,20 @@ export default function GataCoin() {
                         </div>
 
                         <div className='flex flex-col gap-3'>
-                          <p className='text-white font-bol lg:text-md text-xs'>Liquidity and Exchanges Funds 60%</p>
-                          <div className='gap-2'>
+                          <p className='text-white font-bold lg:text-md text-[13px]'>Liquidity and Exchanges Funds 60%</p>
+                          {/* <div className='gap-2'>
                             <p className='text-white font-bol lg:text-md text-xs'>Allocation:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>6,000,000,000 GATA Tokens</li>
                             </ul>
-                          </div>
-                          <div className='gap-2'>
+                          </div> */}
+                          <div className='gap-2 ml-3'>
                             <p className='text-white font-bol lg:text-md text-xs'>Purpose:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Provide liquidity on decentralized exchanges (DEXs) and facilitate exchange listings.</li>
                             </ul>
                           </div>
-                          <div className='gap-2'>
+                          <div className='gap-2 ml-3'>
                             <p className='text-white font-bol lg:text-md text-xs'>Control:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Managed by a separate multi-sig wallet controlled by community and team members.</li>
@@ -217,20 +212,20 @@ export default function GataCoin() {
                         </div>
 
                         <div className='flex flex-col gap-3'>
-                          <p className='text-white font-bol lg:text-md text-xs'>Development Funds 25%</p>
-                          <div className='gap-2'>
+                          <p className='text-white font-bold lg:text-md text-[13px]'>Development Funds 25%</p>
+                          {/* <div className='gap-2'>
                             <p className='text-white font-bol lg:text-md text-xs'>Allocation:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>2,500,000,000 GATA Tokens</li>
                             </ul>
-                          </div>
-                          <div className='gap-2'>
+                          </div> */}
+                          <div className='gap-2 ml-3'>
                             <p className='text-white font-bol lg:text-md text-xs'>Purpose:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Locked with vesting schedules to ensure gradual release.</li>
                             </ul>
                           </div>
-                          <div className='gap-2'>
+                          <div className='gap-2 ml-3'>
                             <p className='text-white font-bol lg:text-md text-xs'>Vesting Schedule:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-white lg:text-[20px] text-[12px]'>Year 1: <span className='text-darkShadeB'>95% locked</span></li>
@@ -241,21 +236,21 @@ export default function GataCoin() {
                         </div>
 
                         <div className='flex flex-col gap-3'>
-                          <p className='text-white font-bol lg:text-md text-xs'>Reserve Fund 10%</p>
-                          <div className='gap-2'>
+                          <p className='text-white font-bold lg:text-md text-[13px]'>Reserve Fund 10%</p>
+                          {/* <div className='gap-2'>
                             <p className='text-white font-bol lg:text-md text-xs'>Allocation:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>1,000,000,000 GATA Tokens</li>
                             </ul>
-                          </div>
-                          <div className='gap-2'>
+                          </div> */}
+                          <div className='gap-2 ml-3'>
                             <p className='text-white font-bol lg:text-md text-xs'>Purpose:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Reserved for unforeseen circumstances and future developments in the ecosystem.</li>
                             </ul>
                           </div>
 
-                          <div className='gap-2'>
+                          <div className='gap-2 ml-3'>
                             <p className='text-white font-bol lg:text-md text-xs'>Control:</p>
                             <ul className='list-disc flex flex-col gap-5 ml-6'>
                               <li className='text-darkShadeB lg:text-[20px] text-[12px]'>Locked for 10 years.</li>

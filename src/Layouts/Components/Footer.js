@@ -23,7 +23,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="https://how.gataprotocol.org/"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   How it works
@@ -38,7 +38,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="/about"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   About
@@ -46,7 +46,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="https://app.gitbook.com/o/J231AtEg93kgH5j5SInZ/s/JGjx7dFjboUSja07ofQR/terms-of-service"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Terms of service
@@ -61,7 +61,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="https://app.gitbook.com/o/J231AtEg93kgH5j5SInZ/s/JGjx7dFjboUSja07ofQR/"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Privacy Policy
@@ -69,7 +69,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="https://app.gitbook.com/o/J231AtEg93kgH5j5SInZ/s/JGjx7dFjboUSja07ofQR/copyright-information"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   Copyright Information
@@ -84,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/"
+                  href="https://app.gitbook.com/o/J231AtEg93kgH5j5SInZ/s/mEbp63adLOtzUtThA23K/"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   FAQs
@@ -92,7 +92,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/"
+                  href="mailto:hello@gataprotocol.org"
                   className="text-gray-600 transition-colors duration-300 lg:text-lg text-[12px]"
                 >
                   hello@gataprotocol.org
@@ -103,32 +103,32 @@ export default function Footer() {
         </div>
         <div className="flex justify-between mt-10 pt-10 pb-10 border-t lg:flex-row">
             <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
-              <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
+              <a href='https://www.linkedin.com/company/gata-protocol/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaLinkedin />
               </a>
             </div>
             <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
-              <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
+              <a href='https://x.com/gataprotocol' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaSquareXTwitter />
               </a>
             </div>
             <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
-              <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
+              <a href='https://www.facebook.com/gataprotocol' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaFacebookSquare />
               </a>
             </div>
             <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
-              <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
+              <a href='https://www.instagram.com/gataprotocol' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaInstagramSquare />
               </a>
             </div>
             <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
-              <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
+              <a href='https://discord.gg/hMsGUhuGRs' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <BsDiscord />
               </a>
             </div>
             <div className="text-center border-4 border-yellowShade rounded-full lg:w-20 lg:h-20 w-10 h-10 flex justify-center items-center">
-              <a href='/' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
+              <a href='https://t.me/gataprotocol' className="flex items-center justify-center lg:w-16 lg:h-16 mx-auto rounded-full bg-darkShadeA w-6 h-6 text-yellowShade lg:text-3xl text-xs">
                 <FaTelegram />
               </a>
             </div>
