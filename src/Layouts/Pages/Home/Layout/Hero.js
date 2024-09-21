@@ -24,14 +24,13 @@ export default function Hero() {
           className="w-full max-w-screen-sm mx-auto rounded md:w-auto lg:max-w-screen-lg"
           alt=""
         />
-        <div className='lg:mt-20 mt-10 rounded-lg spin-btn p-2 border border-blue-200'>
-          <a
-            href='/get'
+        <a  href='/get' className='lg:mt-20 mt-10 rounded-lg spin-btn p-2 border border-blue-200'>
+          <div
             className="inline-flex items-center justify-center w-full lg:h-12 h-8 lg:px-20 px-10 lg:text-xl text-sm font-bold tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-yellowShade focus:shadow-outline focus:outline-none"
           >
             Become a member
-          </a>
-        </div>
+          </div>
+        </a>
       </section>
 
       {/* Left Right Section */}
