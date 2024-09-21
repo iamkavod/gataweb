@@ -13,7 +13,7 @@ export default function GataMarketUI() {
           <div className="relative">
             <div className="px-4 py-0 mx-auto max-w-[1443px] md:px-24 lg:px-8 lg:py-20">
               <div className="flex flex-col items-center justify-between gap-4">
-                <div className="w-full max-w-xl xl:px-8 xl:w-5/12 flex justify-center" >
+                <div className="w-full max-w-xl xl:px-8 xl:w-5/12 flex justify-center lg:mt-0 md:mt-0 -mt-10" >
                   <img src={GataMarket} alt="The Network" className="lg:w-auto lg:h-80 w-auto h-80" />
                 </div>
 
