@@ -4,7 +4,7 @@ import { HomeBody, HomeHero } from './Layout'
 
 export default function Home() {
   return (
-    <main>
+    <main className='overflow-x-hidden'>
         <Header />
         <HomeHero />
         <HomeBody />
