@@ -289,9 +289,30 @@
   }
 }
 
+@media only screen and (width: 430px) {
+  #gatamarket {
+    padding-bottom: 220px;
+    padding-top: 100px;
+  }
+
+  #gatanow {
+    margin-top: -60px;
+  }
+
+  #gatatokenomics {
+    padding-bottom: 240px;
+  }
+}
+
 @media only screen and (width: 344px) {
   #gatatokenomics {
     padding-bottom: 100px;
+  }
+}
+
+@media only screen and (width: 360px) {
+  #gatanow {
+    margin-top: -80px;
   }
 }
 

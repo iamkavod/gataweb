@@ -185,7 +185,7 @@ export default function Body() {
         </div>
       </section>
 
-      <div className='pb-40'>
+      <div className='pb-32'>
         {/* Gata Market */}
         <section className='lg:mb-0 mb-20'>
           <div className="relative lg:pb-[455px] md:pb-[205px]" id='gatamarket'>
